@@ -1,7 +1,7 @@
 ---
 title: Tiago Teixeira
 email: tiago.renou@tecnico.ulisboa.pt
-image: "/images/avatar.png"
+image: "/images/tiago.png"
 description: this is meta description
 social:
   - name: github

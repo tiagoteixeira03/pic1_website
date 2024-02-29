@@ -1,7 +1,7 @@
 ---
 title: Patricia Torres
 email: patricia.torres@tecnico.ulisboa.pt
-image: "/images/avatar.png"
+image: "/images/patricia.png"
 description: this is meta description
 social:
   - name: github
