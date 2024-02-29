@@ -1,6 +1,6 @@
 ---
-title: Sam Wilson
-email: samwilson@email.com
+title: João Carranca
+email: joao.de.sa.carranca@tecnico.ulisboa.pt
 image: "/images/avatar.png"
 description: this is meta description
 social:

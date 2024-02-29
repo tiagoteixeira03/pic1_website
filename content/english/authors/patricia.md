@@ -1,6 +1,6 @@
 ---
-title: John Doe
-email: johndoe@email.com
+title: Patricia Torres
+email: patricia.torres@tecnico.ulisboa.pt
 image: "/images/avatar.png"
 description: this is meta description
 social:

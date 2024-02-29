@@ -1,7 +1,7 @@
 ---
-title: William Jacob
-email: williamjacob@email.com
-image: "/images/avatar.png"
+title: António Morais
+email: antonio.v.morais.c@tecnico.ulisboa.pt
+image: "/images/antonio.png"
 description: this is meta description
 social:
   - name: github
