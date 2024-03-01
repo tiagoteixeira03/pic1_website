@@ -33,8 +33,8 @@
     </section>
   {{ end }}
   <!-- /Banner -->
-
-  <!-- Features -->
+<!--
+  Features 
   {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
       <div class="container">
@@ -76,9 +76,9 @@
       </div>
     </section>
   {{ end }}
-  <!-- /Features -->
-
-  <!-- Testimonials -->
+  /Features  -->
+  
+  <!-- Testimonials 
   {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
       <section class="section">
@@ -140,5 +140,5 @@
       </section>
     {{ end }}
   {{ end }}
-  <!-- /Testimonials -->
+ /Testimonials -->
 {{ end }}

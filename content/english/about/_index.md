@@ -2,7 +2,7 @@
 title: "PIC1 Team"
 meta_title: "About"
 description: "this is meta description"
-image: "/images/tiago.png"
+image: "/images/robot.jpg"
 draft: false
 ---
 
