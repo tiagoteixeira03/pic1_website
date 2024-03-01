@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "http://web.tecnico.ulisboa.pt/ist1102638/"
+baseURL = "https://web.tecnico.ulisboa.pt/ist1102638/"
 # Title of your website (required).
 title = "Indoor 3D-Sensor Based Navigation"
 # Your theme name
