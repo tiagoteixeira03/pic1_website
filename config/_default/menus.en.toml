@@ -41,7 +41,7 @@ url = "newsletter/"
 [[main]]
 parent = "More"
 name = "Team"
-url = "authors/"
+url = "team/"
 
 #[[main]]
 #parent = "More"
