@@ -1,7 +1,7 @@
 ---
 title: Catarina Caramalho
 email: catarina.caramalho@tecnico.ulisboa.pt
-image: "/images/catarina.png"
+image: "/images/Team/catarina.png"
 description: this is meta description
 social:
   - name: github

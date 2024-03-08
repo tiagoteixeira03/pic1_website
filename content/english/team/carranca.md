@@ -1,7 +1,7 @@
 ---
 title: João Carranca
 email: joao.de.sa.carranca@tecnico.ulisboa.pt
-image: "/images/carranca.png"
+image: "/images/Team/carranca.png"
 description: this is meta description
 social:
   - name: github
