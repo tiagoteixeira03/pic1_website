@@ -1,7 +1,7 @@
 ---
 title: António Morais
 email: antonio.v.morais.c@tecnico.ulisboa.pt
-image: "/images/antonio.png"
+image: "/images/Team/antonio.png"
 description: this is meta description
 social:
   - name: github
@@ -14,7 +14,12 @@ social:
 
   - name: linkedin
     icon: fa-brands fa-linkedin
-    link: https://linkedin.com
+    link: https://www.linkedin.com/in/antoniovascomorais
+
 ---
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
+I am a third-year student pursuing a degree in Electrical and Computer Engineering at IST, Lisbon.
+
+I am seeking internship programs that align with my field of study, as well as engaging projects and volunteer initiatives where I can apply my skills and make a meaningful impact.
+
+One of my core values is continuous learning. I enjoy learning and working with people. I always strive to do better, both academically and professionally.

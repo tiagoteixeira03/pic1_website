@@ -1,7 +1,7 @@
 ---
 title: João Pinheiro
 email: joaoppinheiro@tecnico.ulisboa.pt
-image: "/images/pinheiro.png"
+image: "/images/Team/pinheiro.png"
 description: this is meta description
 social:
   - name: github
