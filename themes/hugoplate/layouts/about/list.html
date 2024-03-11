@@ -1,12 +1,15 @@
 {{ define "main" }}
-  <section class="section-sm">
+  {{ partial "page-header" . }}
+
+
+  <section class="section">
     <div class="container">
-      <div class="row justify-center">
-        <div class="md:col-10 lg:col-7 text-center">
-          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h2 class="h3 mb-6">{{ .Title }}</h2>
-          <div class="content">{{ .Content }}</div>
-        </div>
+      <div class="row">
+        {{ range .RegularPages }}
+          <div class="md:col-6 lg:col-4 mb-14">
+            {{ partial "components/author-card" . }}
+          </div>
+        {{ end }}
       </div>
     </div>
   </section>
