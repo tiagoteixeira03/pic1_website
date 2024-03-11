@@ -3,7 +3,7 @@ title: "Week 2 - 3D Mapping"
 meta_title: ""
 description: "meta description for week 2 blog post"
 date: 2024-02-25T13:28:00Z
-image: "/images/Blog/week2/LIO-SAM_DATASET.jpeg"
+image: "/images/Blog/week2/LIO-SAM_DATASET.jpg"
 categories: ["Weekly Progress"]
 author: "António Morais"
 tags: ["updates", "mapping"]
@@ -29,4 +29,4 @@ Keeping this in mind the team chose to explore (although not planned to do so) t
 
 Notably, we encountered existing GitHub issues ([#206](https://github.com/TixiaoShan/LIO-SAM/issues/206))addressing compilation challenges specific to ROS Noetic, facilitating our implementation efforts. We then successfully conducted testing using one of the datasets (`walking_dataset.bag`) provided by the authors. 
 
-{{< image src="/images/Blog/week2/LIO-SAM_DATASET.jpeg" caption="Figure 1 - Map obtained utilizing LIO-SAM alongside one of the datasets provided by the authors" alt="alter-text" height="300px" width="500px" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+{{< image src="/images/Blog/week2/LIO-SAM_DATASET.jpg" caption="Figure 1 - Map obtained utilizing LIO-SAM alongside one of the datasets provided by the authors" alt="alter-text" height="300px" width="500px" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}

@@ -7,14 +7,9 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "About"
-url = "about/"
+name = "Project"
+url = "project/"
 weight = 2
-
-#[[main]]
-#name = "Elements"
-#url = "elements/"
-#weight = 3
 
 [[main]]
 name = "Blog"
@@ -22,54 +17,17 @@ url = "blog/"
 weight = 3
 
 [[main]]
-weight = 5
-name = "More"
-hasChildren = true
-
-#[[main]]
-#parent = "More"
-#name = "Blog"
-#url = "blog/"
-
-[[main]]
-parent = "More"
-name = "Newsletter"
-url = "newsletter/"
-
-#Mudar url
-[[main]]
-parent = "More"
-name = "Team"
-url = "team/"
-
-#[[main]]
-#parent = "More"
-#name = "Categories"
-#url = "categories/"
-
-#[[main]]
-#parent = "More"
-#name = "404 Page"
-#url = "404/"
-
+name = "About"
+url = "about/"
+weight = 4
 
 # footer menu
 [[footer]]
-name = "About"
-url = "about/"
-weight = 1
-
-#[[footer]]
-#name = "Elements"
-#url = "elements/"
-#weight = 2
-
-[[footer]]
 name = "Newsletter"
 url = "newsletter/"
-weight = 2
+weight = 1
 
 [[footer]]
 name = "Privacy Policy"
 url = "privacy-policy/"
-weight = 3
+weight = 2
