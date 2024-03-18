@@ -1,1 +1,15 @@
 // Add your own custom styles here
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    flex-basis: 45%;
+    margin-right: 2%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
