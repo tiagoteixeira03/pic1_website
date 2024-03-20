@@ -1,1 +1,27 @@
 // Add your own custom styles here
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    flex-basis: 45%;
+    margin-right: 2%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-wrapper {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}

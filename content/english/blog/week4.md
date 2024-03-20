@@ -44,7 +44,7 @@ With these modifications implemented throughout the codebase, the algorithm succ
 {{< image src="/images/Blog/week4/A-LOAM_DATASET.jpeg" caption="Figure 1 - Map obtained utilizing the A-LOAM algorithm alongside one of the datasets provided by the authors" alt="alter-text" height="300px" width="500px" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
 <!-- After this the team aimed towards running the algorithm with the TIAGo's simulation developed by SocRob@Home. For this to happen it was only needed to give the data gathered by the Ouster LiDAR in simulation as input to the algorithm, so give the topic where the data of the Ouster is being published: -->
-Subsequently, the team directed its efforts towards executing the algorithm within the TIAGo's simulation environment developed by SocRob@Home. Facilitating this transition merely required supplying the algorithm with the data acquired by the Ouster LiDAR in simulation. To accomplish this, we identified the [topic](http://wiki.ros.org/rostopic) where the Ouster data is published:
+Subsequently, the team directed its efforts towards executing the algorithm within the TIAGo's simulation environment developed by SocRob@Home. Easing this transition merely required supplying the algorithm with the data acquired by the Ouster LiDAR in simulation. To accomplish this, we identified the [topic](http://wiki.ros.org/rostopic) where the Ouster data is published:
 
 ```cpp 
 // File path: A-LOAM/src/scanRegistration.cpp
