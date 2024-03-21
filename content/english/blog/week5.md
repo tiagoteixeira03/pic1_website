@@ -28,7 +28,7 @@ After assembling a dataset with real data, the team proceeded to test A-LOAM wit
     <div class="slider-wrapper">
         {{< slider dir="images/aloam-gallery-bad" class="max-w-[600px] ml-auto mr-auto" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
     </div>
-    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Gallery 1 - Map of the laboratory of systems and robotics (where the testbed is located), using A-LOAM with real data aquired from the robot's Ouster</p>
+    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 2 - Map of the laboratory of systems and robotics (where the testbed is located), using A-LOAM with real data aquired from the robot's Ouster</p>
 </div>
 
 <!-- As one can see the result does not look promissing but it was not the algorithm's fault. Later we figured it was due to the fact that we teleoperated the robot too fast and because of that the data aquired doesn't even make sense. -->
@@ -41,7 +41,7 @@ To enhance the quality of the dataset, the team repeated the process several tim
     <div class="slider-wrapper">
         {{< slider dir="images/aloam-gallery-testbed" class="max-w-[600px] ml-auto mr-auto" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
     </div>
-    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Gallery 2 - Map of the testbed using A-LOAM with real data aquired from the robot's Ouster</p>
+    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 3 - Map of the testbed using A-LOAM with real data aquired from the robot's Ouster</p>
 </div>
 
 <!-- One can see that the result is much more conclusive as it now looks like the testbed itself, but it still detects some non whishible points (it is possible to see some kind of reflection of the testbed due to the reflection of light caused by the windows - this happens because of the LiDAR technology). -->
@@ -54,7 +54,7 @@ Subsequently, the team created a rosbag of the entire laboratory and achieved a 
     <div class="slider-wrapper">
         {{< slider dir="images/aloam-gallery-good" class="max-w-[600px] ml-auto mr-auto" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
     </div>
-    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Gallery 3 - Map of the laboratory of systems and robotics (where the testbed is located), using A-LOAM with real data aquired from the robot's Ouster</p>
+    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 4 - Map of the laboratory of systems and robotics (where the testbed is located), using A-LOAM with real data aquired from the robot's Ouster</p>
 </div>
 
 <!-- Note that the red points that seem that they are representing some kind of lower floor are also due to light reflections on the floor due to the varnished floor. -->
@@ -105,13 +105,13 @@ The mistake was starting to study the algorithm before testing it, as it is comm
 ###### HDL Localization
 
 The [HDL Localization](https://github.com/koide3/hdl_localization) algorithm uses a 3D LiDAR (Velodyne HDL32). Utilizing Unscented Kalman Filter-based pose estimation, this package incorporates input data from an IMU (Inertial Measurement Unit) to estimate pose. However, the utilization of IMU data remains optional, and the team is currently evaluating whether to incorporate it or not. Despite its promising capabilities, this algorithm does not generate TFs (Transforms).
-{{< image src="/images/Blog/week5/hdl.gif" caption="Figure 2 - Map obtained utilizing the A-LOAM algorithm alongside one of the datasets provided by the authors" alt="alter-text" height="300px" width="500px" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+{{< image src="/images/Blog/week5/hdl.gif" caption="Figure 5 - HDL Localization tested with a dataset as input" alt="alter-text" height="300px" width="500px" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
 ###### MCL3D
 
 [MCL3D](https://github.com/NaokiAkai/mcl3d_ros) is based on a fusion approach that combines [Monte Carlo localitazion](https://www.mathworks.com/help/nav/ug/monte-carlo-localization-algorithm.html) (MCL) and [scan matching](https://bluebotics.com/differences-natural-navigation-scan-feature/#:~:text=by%20ANT) (SM) through [importance sampling](https://builtin.com/articles/importance-sampling). This fusion method seamlessly integrates the strengths of MCL and SM while mitigating their limitations, offering a comprehensive solution for 3D localization tasks. Notably, this fusion method achieves accurate results with fewer particles, leading to computational efficiency without sacrificing accuracy. 
 
-{{< image src="/images/Blog/week5/mcl3d.gif" caption="Figure 2 - Map obtained utilizing the A-LOAM algorithm alongside one of the datasets provided by the authors" alt="alter-text" height="300px" width="500px" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+{{< image src="/images/Blog/week5/mcl3d.gif" caption="Figure 6 - MCL3D alongside one of the datasets provided by the authors" alt="alter-text" height="300px" width="500px" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
 
 #### 2D Path Planning 
@@ -124,10 +124,10 @@ As shown in Figure 5, the robot is now capable of detecting the obstacles in its
 
 <div class="image-container">
     <div class="image">
-        {{< image src="/images/Blog/week5/simulation_environment.png" caption="Figure 4 - Simulation Environment" alt="HDL Localization" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="HDL Localization"  webp="false" >}}
+        {{< image src="/images/Blog/week5/simulation_environment.png" caption="Figure 7 - Simulation Environment" alt="HDL Localization" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="HDL Localization"  webp="false" >}}
     </div>
     <div class="image">
-        {{< image src="/images/Blog/week5/ouster_laserscan.png" caption="Figure 5 - Ouster Points (Red) and Laserscan (Pink)" alt="MCL3D" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="MCL3D"  webp="false" >}}
+        {{< image src="/images/Blog/week5/ouster_laserscan.png" caption="Figure 8 - Ouster Points (Red) and Laserscan (Pink)" alt="MCL3D" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="MCL3D"  webp="false" >}}
     </div>
 </div>
 
