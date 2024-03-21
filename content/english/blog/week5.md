@@ -120,7 +120,7 @@ In the fifth week, the team made significant progress in leveraging the point cl
 
 To accomplish this, we made modifications to certain launch files, which were previously utilized to transmit the point cloud from the RGBD camera on the robot's torso to the pointcloud_to_laserscan node. Given that we already had a ROS topic in the simulation where the Ouster points were being published, our task primarily involved developing the code necessary to relay these points to the node mentioned previously.
 
-As shown in Figure 5, the robot is now capable of detecting the obstacles in its surroundings using the information provided by the Ouster.
+As shown in Figure 8, the robot is now capable of detecting the obstacles in its surroundings using the information provided by the Ouster.
 
 <div class="image-container">
     <div class="image">
