@@ -27,7 +27,12 @@ name = "Newsletter"
 url = "newsletter/"
 weight = 1
 
+# [[footer]]
+# name = "Privacy Policy"
+# url = "privacy-policy/"
+# weight = 2
+
 [[footer]]
-name = "Privacy Policy"
-url = "privacy-policy/"
+name = "About"
+url = "about/"
 weight = 2

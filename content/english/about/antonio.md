@@ -22,8 +22,4 @@ social:
 
 ---
 
-I am a third-year student pursuing a degree in Electrical and Computer Engineering at IST, Lisbon.
-
-I am seeking internship programs that align with my field of study, as well as engaging projects and volunteer initiatives where I can apply my skills and make a meaningful impact.
-
-One of my core values is continuous learning. I enjoy learning and working with people. I always strive to do better, both academically and professionally.
+Responsible for 3D Mapping of the project. My work involves testing SLAM algorithms such as A-LOAM and LIO-SAM, both in simulation and on the real robot.
