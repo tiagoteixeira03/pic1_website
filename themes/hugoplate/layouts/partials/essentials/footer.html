@@ -60,12 +60,21 @@
 <footer class="bg-theme-light dark:bg-darkmode-theme-light">
   <div class="container">
     <div class="row items-center py-10">
+      
+      <!-- Left section -->
       <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
         <!-- Navbar brand/logo -->
         <a class="navbar-brand inline-block" href="{{ site.Home.RelPermalink }}">
           {{ partial "logo" }}
         </a>
+        <!-- <a
+          class="navbar-brand inline-block"
+          href="#">
+          <img src="/ist1102644/images/Blog/week5/cover.png" alt="First Image">
+        </a> -->
       </div>
+      
+      <!-- Middle section -->
       <div class="lg:col-6 mb-8 text-center lg:mb-0">
         <ul>
           {{ range site.Menus.footer }}
@@ -86,13 +95,28 @@
             </li>
           {{ end }}
         </ul>
+        <!-- Text: Get to know more about SocRob@Home and ISR -->
+        <div class="mt-8 text-lg font-bold">Get to know more about SocRob@Home and ISR</div>
+        <!-- Links -->
+        <div class="mt-4 text-center">
+          <!-- Left link -->
+          <div class="mr-4 inline-block">
+            <a href="https://irsgroup.isr.tecnico.ulisboa.pt/projects/socrob-home/">SocRob@Home's website</a>
+          </div>
+          <!-- Right link -->
+          <div class="inline-block">
+            <a href="https://welcome.isr.tecnico.ulisboa.pt/">ISR's website</a>
+          </div>
+        </div>
       </div>
+
+      <!-- Right section -->
       <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+        <!-- Text: Contacts -->
         <div class="mb-4 text-lg font-bold text-right">Contacts</div>
         <!-- Your contact information -->
         <div>
           <!-- Add your contact information here -->
-          <a href="mailto:socrob.home@gmail.com">socrob.home@gmail.com</a> <br>
           <a href="mailto:antonio.v.morais.c@tecnico.ulisboa.pt">antonio.v.morais.c@tecnico.ulisboa.pt</a> <br>
           <a href="mailto:catarina.caramalho@tecnico.ulisboa.pt">catarina.caramalho@tecnico.ulisboa.pt</a> <br>
           <a href="mailto:joao.de.sa.carranca@tecnico.ulisboa.pt">joao.de.sa.carranca@tecnico.ulisboa.pt</a> <br>
@@ -101,6 +125,7 @@
           <a href="mailto:tiago.renou@tecnico.ulisboa.pt">tiago.renou@tecnico.ulisboa.pt</a>
         </div>
       </div>
+      
     </div>
   </div>
 </footer>
