@@ -1,9 +1,7 @@
 ---
 title: "Project"
-meta_title: "Project"
+meta_title: ""
 description: "this is meta description"
-#image: "/images/robot.png"
-draft: false
 ---
 
 <div style="text-align: justify;">
