@@ -1,17 +1,16 @@
-{{ define "main" }}
-  {{ partial "page-header" . }}
+{{ define "main" }} {{ partial "page-header" . }}
 
-  <section class="section">
+<section class="section">
     <div class="container">
-      <img src="/ist1102644//images/Blog/week5/ouster_laserscan.png" alt="Image" class="main-image">
-      <div class="row">
-        {{ range .RegularPages }}
-          <div class="md:col-6 lg:col-4 mb-14">
-            {{ partial "components/author-card" . }}
-          </div>
-        {{ end }}
-      </div>
+        <img src="/ist1102644//images/Blog/week5/ouster_laserscan.png" alt="Image" class="main-image">
+        <!-- <foto de equipa> -->
+        <div class="row">
+            {{ range .RegularPages }}
+            <div class="md:col-6 lg:col-4 mb-14">
+                {{ partial "components/author-card" . }}
+            </div>
+            {{ end }}
+        </div>
     </div>
-  </section>
+</section>
 {{ end }}
-

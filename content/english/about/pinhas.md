@@ -19,6 +19,7 @@ social:
   - name: linkedin
     icon: fa-brands fa-linkedin
     link: https://www.linkedin.com/in/-joao-pinheiro-/
+
 ---
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
+Responsible for 3D Localization of the project. My work involves testing localization algorithms such as HDL and MCL3D, both in simulation and on the real robot.
