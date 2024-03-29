@@ -7,11 +7,15 @@ description: "this is meta description"
 <div style="text-align: justify;">
 
 To better describe the project let's start with the Problem Definition:
+</div>
+<br>
 
-```plaintext 
-        Install a 3D LiDAR to detect objects in 3 Dimensions to improve 
-            2D Navigation of an autonomous domestic mobile robot.
-```
+#### **Install a 3D LiDAR to detect objects in 3 Dimensions to improve 2D Navigation of an autonomous domestic mobile robot.**
+
+<br>
+<!-- Install a 3D LiDAR to detect objects in 3 Dimensions to improve 2D Navigation of an autonomous domestic mobile robot. -->
+
+<div style="text-align: justify;">
 
 The project involves developing a navigation system for domestic robots (students will be using a TIAGo robot) that help elderly people or individuals with disabilities or illnesses, using 3D sensors instead of traditional 2D ones. While 2D sensors may have limitations, such as not capturing the z coordinate, 3D sensors, like the Ouster OS1 LiDAR, overcome these limitations, enabling more precise and safe indoor navigation.
 
@@ -98,7 +102,7 @@ The graph on the right is an enlargement of the one on the left in the zone of v
 Hence, for a maximum velocity of 0.5m/s and an arbitrary distance of 1.5m, the decision time is 0.5 seconds.
 It will be tested if the decision time is obtained for the correpondent velocity and distance values during during the development of the project.
 
-In order to test and validate the mestrics, the students will test every module in simulation and in a real environment, on a TIAGo robot as mentioned before.
+In order to test and validate the metrics, the students will test every module in simulation and in a real environment, on a TIAGo robot as mentioned before.
 
 <div class="image-slider-container">
     <div class="slider-wrapper">
