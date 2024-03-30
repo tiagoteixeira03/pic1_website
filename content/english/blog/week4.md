@@ -60,3 +60,4 @@ Following these adjustments, we successfully generated a map of the simulation e
 <!-- The team further delved into exploring the LIO-SAM algorithm, and conducted testing using one of the datasets (walking_dataset.bag) provided by the authors. Notably, we encountered existing GitHub issues addressing compilation challenges specific to ROS Noetic, facilitating our implementation efforts.
 
 {{< image src="/images/Blog/week2/LIO-SAM_DATASET.jpeg" caption="Figure 1 - Map obtained utilizing LIO-SAM alongside one of the datasets provided by the authors" alt="alter-text" height="300px" width="500px" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}} -->
+
