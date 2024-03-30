@@ -26,18 +26,14 @@
 {{ end }}
 <!-- /Banner -->
 <!--Features -->
-{{ range $i, $e:= .Params.features }}
+{{ range $i, $e := .Params.features }}
 <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
     <div class="container">
         <div class="row items-center justify-between">
-            <div class="mb:md-0 {{ if not (modBool $i 2) }}
-              md:order-2
-            {{ end }} md:col-5 mb-6">
+            <div class="mb:md-0 {{ if not (modBool $i 2) }} md:order-2 {{ end }} md:col-5 mb-6">
                 {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
             </div>
-            <div class="{{ if not (modBool $i 2) }}
-              md:order-1
-            {{ end }} md:col-7 lg:col-6">
+            <div class="{{ if not (modBool $i 2) }} md:order-1 {{ end }} md:col-7 lg:col-6">
                 <h2 class="mb-4">
                     {{ .title | markdownify }}
                 </h2>
@@ -62,7 +58,51 @@
 </section>
 {{ end }}
 
-<!-- Testimonials -->
+<!-- Third section -->
+<section class="section-sm bg-gradient">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="md:col-10 lg:col-7 text-center">
+                <h2 class="mb-4">Partners</h2>
+                <p class="mb-8">Our project is part of the 1st Cycle Integrated Project (PIC1) course at Instituto Superior Técnico (IST). We are affiliated with the Institute of Robotics and Systems (ISR) and are collaborating with the SocRob@Home research project. Our work involves the TIAGo robot manufactured by Pal Robotics.</p>
+            </div>
+        </div>
+        <div class="row justify-center">
+            <div class="md:col-4 mb-6 text-center">
+                <!-- First image with link -->
+                <a href="https://tecnico.ulisboa.pt/pt/">
+                    {{ partial "image" (dict "Src" "/images/ist.png" "Alt" "ist_logo" ) }}
+                </a>
+            </div>
+            <div class="md:col-4 mb-6 text-center">
+                <!-- Second image with link -->
+                <a href="https://welcome.isr.tecnico.ulisboa.pt/">
+                    {{ partial "image" (dict "Src" "/images/isr.png" "Alt" "isr_logo") }}
+                </a>
+            </div>
+            <div class="md:col-4 mb-6 text-center">
+                <!-- Third image with link -->
+                <a href="https://pal-robotics.com/">
+                    {{ partial "image" (dict "Src" "/images/pal_robotics.png" "Alt" "pal_logo") }}
+                </a>
+            </div>
+        </div>
+        <!-- Fourth image with link -->
+        <div class="row justify-center">
+            <div class="md:col-4 mb-6 text-center">
+                <!-- Fourth image with link -->
+                <a href="https://irsgroup.isr.tecnico.ulisboa.pt/projects/socrob-home/">
+                    {{ partial "image" (dict "Src" "/images/socrob_home_logo.png" "Alt" "socrob_logo") }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Testimonials
 {{ with site.GetPage "sections/testimonial" }} {{ if .Params.enable }}
 <section class="section">
     <div class="container">
@@ -114,4 +154,6 @@
         </div>
     </div>
 </section>
-{{ end }} {{ end }} {{ end }}
+{{ end }} {{ end }}  -->
+
+{{ end }}

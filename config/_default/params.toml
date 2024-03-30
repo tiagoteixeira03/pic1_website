@@ -14,13 +14,13 @@ logo_webp = true
 # logo text will only show when logo is missing.
 logo_text = "Hugoplate"
 
-# Secondary logo
-secondary_logo = "images/isr.png"
-secondary_logo_darkmode = "images/isr-darkmode.png"
-secondary_logo_width = "160px"
-secondary_logo_height = "32px"
-secondary_logo_webp = true
-secondary_logo_text = "Hugoplate"
+# # Secondary logo
+# secondary_logo = "images/isr.png"
+# secondary_logo_darkmode = "images/isr-darkmode.png"
+# secondary_logo_width = "160px"
+# secondary_logo_height = "32px"
+# secondary_logo_webp = true
+# secondary_logo_text = "Hugoplate"
 
 # navbar fixed to top
 navbar_fixed = true
