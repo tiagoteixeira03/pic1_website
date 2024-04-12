@@ -23,10 +23,10 @@ The project involves developing a navigation system for domestic robots (student
 
 <div style="display: flex; align-items: flex-start;">
     <div style="flex: 1; color: #b4afb7; margin-top: 3%; margin-right:8%; text-align: justify;">
-       {{< image src="/images/2d_map.png" caption="Figure 2 - 2D Map (Robocup Arena in Bordeaux 2023)" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
+       {{< image src="/images/2d_map.png" caption="Figure 1 - 2D Map (Robocup Arena in Bordeaux 2023)" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
     </div>
     <div style="flex: 1; color: #b4afb7; margin-top: 3%; margin-right:0%; text-align: justify;">
-        {{< image src="/images/3d_map.png" caption="Figure 3 - 3D Map (North Tower Garden - IST)" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
+        {{< image src="/images/3d_map.png" caption="Figure 2 - 3D Map (North Tower Garden - IST)" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
     </div>
 </div>
 
@@ -38,7 +38,7 @@ As shown in the images above, a map with a 3D point cloud offers significantly m
 
 <div style="display: flex; align-items: flex-start;">
     <div style="flex: 1; color: #b4afb7; margin-top: 0%; margin-right:0%; text-align: justify;">
-       {{< image src="/images/2d_pc.png" caption="Figure 4 - Robot detecting objetcs with a 2D LiDAR" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
+       {{< image src="/images/2d_pc.png" caption="Figure 3 - Robot detecting objetcs with a 2D LiDAR" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
     </div>
 </div>
 
@@ -52,15 +52,15 @@ Since the project is part of the SocRob@Home team belonging to the ISR, it is im
 
 <div style="display: flex; align-items: flex-start;">
     <div style="flex: 1; color: #b4afb7; margin-top: 0%; margin-right:0%; text-align: justify;">
-       {{< image src="/images/pipeline.png" caption="Figure 5 - Pipeline of TIAGo (Adapted from P. U. Lima et al., “SocRob@Home”, KI - Künstliche Intelligenz, vol. 33, no. 4, pp. 343–356, Dec. 2019, doi: 10.1007/s13218-019-00618-w. Adapted with permission.)" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
+       {{< image src="/images/pipeline.png" caption="Figure 4 - Pipeline of TIAGo (Adapted from P. U. Lima et al., “SocRob@Home”, KI - Künstliche Intelligenz, vol. 33, no. 4, pp. 343–356, Dec. 2019, doi: 10.1007/s13218-019-00618-w. Adapted with permission.)" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
     </div>
 </div>
 
 <div class="image-slider-container">
     <div class="slider-wrapper">
-        {{< slider dir="images/feito_e_por_fazer" class="max-w-[] ml-auto mr-auto" height="" width="" webp="true" command="Fit" option="" zoomable="true" >}}
+        {{< slider dir="images/feito_e_por_fazer" class="max-w-[800px] ml-auto mr-auto" height="" width="" webp="true" command="Fit" option="" zoomable="true" >}}
     </div>
-    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 6 - What is already done by SocRob@Home and what students will develop</p>
+    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 5 - What is already done by SocRob@Home and what students will develop</p>
 </div>
 
 <div style="text-align: justify;">
@@ -94,7 +94,7 @@ Having explained this, one can now see how the decision time varies in function 
 
 <div style="display: flex; align-items: flex-start;">
     <div style="flex: 1; color: #b4afb7; margin-top: 0%; margin-right:0%; text-align: justify;">
-       {{< image src="/images/graficos_sol_req.png" caption="Figure 7 - Decision time in function of distance and velocity" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
+       {{< image src="/images/graficos_sol_req.png" caption="Figure 6 - Decision time in function of distance and velocity" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" style="width: 20%;" >}}
     </div>
 </div>
 
@@ -106,9 +106,9 @@ In order to test and validate the metrics, the students will test every module i
 
 <div class="image-slider-container">
     <div class="slider-wrapper">
-        {{< slider dir="images/sim_e_testbed" class="max-w-[] ml-auto mr-auto" height="" width="" webp="true" command="Fit" option="" zoomable="true" >}}
+        {{< slider dir="images/sim_e_testbed" class="max-w-[800px] ml-auto mr-auto" height="" width="" webp="true" command="Fit" option="" zoomable="true" >}}
     </div>
-    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 8 - Testbed simulation and real testbed</p>
+    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 7 - Testbed simulation and real testbed</p>
 </div>
 
 The tests will consist in:

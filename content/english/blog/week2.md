@@ -1,10 +1,10 @@
 ---
-title: "Week 2 - 3D Mapping"
+title: "Week 2 (3rd Period) - 3D Mapping"
 meta_title: ""
 description: "meta description for week 2 blog post"
 date: 2024-02-25T13:28:00Z
 image: "/images/Blog/week2/LIO-SAM_DATASET.jpg"
-categories: ["Weekly Progress"]
+categories: ["3rd Period - Weekly Progress"]
 author: "António Morais"
 tags: ["updates", "mapping"]
 draft: false

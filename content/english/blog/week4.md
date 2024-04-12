@@ -1,10 +1,10 @@
 ---
-title: "Week 4 - Website Development and 3D Mapping"
+title: "Week 4 (3rd Period) - Website Development and 3D Mapping"
 meta_title: ""
 description: "meta description for week 4 blog post"
 date: 2024-03-10T13:28:00Z
 image: "/images/Blog/week4/A-LOAM_DATASET.jpeg"
-categories: ["Weekly Progress"]
+categories: ["3rd Period - Weekly Progress"]
 author: "António Morais"
 tags: ["website", "mapping"]
 draft: false

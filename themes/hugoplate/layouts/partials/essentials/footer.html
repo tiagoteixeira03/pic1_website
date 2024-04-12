@@ -107,25 +107,29 @@
           <div class="inline-block">
             <a href="https://welcome.isr.tecnico.ulisboa.pt/">ISR's website</a>
           </div>
+          <div class="mt-4">
+            <a href="https://www.youtube.com/@socrob_home">SocRob@Home's YouTube</a>
+          </div>
         </div>
       </div>
 
       <!-- Right section -->
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right {{ if lt .Site.Params.footerTextAlignBreakpoint $.Site.Params.textDirection }} lg:text-center {{ end }}">
         <!-- Text: Contacts -->
-        <div class="mb-4 text-lg font-bold text-right">Contacts</div>
+        <div class="mb-4 text-lg font-bold text-center lg:text-right lg:text-left">
+            Contacts
+        </div>
         <!-- Your contact information -->
         <div>
-          <!-- Add your contact information here -->
-          <a href="mailto:antonio.v.morais.c@tecnico.ulisboa.pt">antonio.v.morais.c@tecnico.ulisboa.pt</a> <br>
-          <a href="mailto:catarina.caramalho@tecnico.ulisboa.pt">catarina.caramalho@tecnico.ulisboa.pt</a> <br>
-          <a href="mailto:joao.de.sa.carranca@tecnico.ulisboa.pt">joao.de.sa.carranca@tecnico.ulisboa.pt</a> <br>
-          <a href="mailto:joaoppinheiro@tecnico.ulisboa.pt">joaoppinheiro@tecnico.ulisboa.pt</a> <br>
-          <a href="mailto:patricia.torres@tecnico.ulisboa.pt">patricia.torres@tecnico.ulisboa.pt</a> <br>
-          <a href="mailto:tiago.renou@tecnico.ulisboa.pt">tiago.renou@tecnico.ulisboa.pt</a>
+            <!-- Add your contact information here -->
+            <a href="mailto:antonio.v.morais.c@tecnico.ulisboa.pt">antonio.v.morais.c@tecnico.ulisboa.pt</a> <br>
+            <a href="mailto:catarina.caramalho@tecnico.ulisboa.pt">catarina.caramalho@tecnico.ulisboa.pt</a> <br>
+            <a href="mailto:joao.de.sa.carranca@tecnico.ulisboa.pt">joao.de.sa.carranca@tecnico.ulisboa.pt</a> <br>
+            <a href="mailto:joaoppinheiro@tecnico.ulisboa.pt">joaoppinheiro@tecnico.ulisboa.pt</a> <br>
+            <a href="mailto:patricia.torres@tecnico.ulisboa.pt">patricia.torres@tecnico.ulisboa.pt</a> <br>
+            <a href="mailto:tiago.renou@tecnico.ulisboa.pt">tiago.renou@tecnico.ulisboa.pt</a>
         </div>
       </div>
-      
     </div>
   </div>
 </footer>

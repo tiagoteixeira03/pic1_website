@@ -1,15 +1,15 @@
 ---
-title: "Week 5 - 3D Mapping, Localization and 2D Path Planning"
+title: "Week 5 (3rd Period) - 3D Mapping, Localization and 2D Path Planning"
 meta_title: ""
 description: "meta description for week 5 blog post"
 date: 2024-03-17T13:28:00Z
 image: "/images/Blog/week5/cover.png"
-categories: ["Weekly Progress"]
+categories: ["3rd Period - Weekly Progress"]
 authors:
   - "António Morais"
   - "Catarina Caramalho"
   - "Tiago Teixeira"
-tags: ["localization"]
+tags: ["localization", "mapping", "path planning"]
 draft: false
 ---
 #### 3D Mapping

@@ -71,36 +71,24 @@
             <div class="md:col-4 mb-6 text-center">
                 <!-- First image with link -->
                 <a href="https://tecnico.ulisboa.pt/pt/">
-                    {{ partial "image" (dict "Src" "/images/ist.png" "Alt" "ist_logo" ) }}
-                </a>
-            </div>
-            <div class="md:col-4 mb-6 text-center">
-                <!-- Second image with link -->
-                <a href="https://welcome.isr.tecnico.ulisboa.pt/">
-                    {{ partial "image" (dict "Src" "/images/isr.png" "Alt" "isr_logo") }}
+                    {{ partial "image" (dict "Src" "/images/ist.png" "Alt" "ist_logo" "Class" "max-w-1/2") }}
                 </a>
             </div>
             <div class="md:col-4 mb-6 text-center">
                 <!-- Third image with link -->
-                <a href="https://pal-robotics.com/">
-                    {{ partial "image" (dict "Src" "/images/pal_robotics.png" "Alt" "pal_logo") }}
+                <a href="https://irsgroup.isr.tecnico.ulisboa.pt/projects/socrob-home/" class="image-link">
+                    {{ partial "image" (dict "Src" "/images/socrob_home_logo.png" "Alt" "socrob_logo" "Class" "max-w-1/2") }}
                 </a>
-            </div>
-        </div>
-        <!-- Fourth image with link -->
-        <div class="row justify-center">
-            <div class="md:col-4 mb-6 text-center" style="margin-left: 14%;">
-                <!-- Fourth image with link -->
-                <a href="https://irsgroup.isr.tecnico.ulisboa.pt/projects/socrob-home/">
-                    {{ partial "image" (dict "Src" "/images/socrob_home_logo.png" "Alt" "socrob_logo") }}
+            </div>                      
+            <div class="md:col-4 mb-6 text-center">
+                <!-- Second image with link -->
+                <a href="https://welcome.isr.tecnico.ulisboa.pt/">
+                    {{ partial "image" (dict "Src" "/images/isr.png" "Alt" "isr_logo" "Class" "max-w-1/2") }}
                 </a>
             </div>
         </div>
     </div>
 </section>
-
-
-
 
 <!-- Testimonials
 {{ with site.GetPage "sections/testimonial" }} {{ if .Params.enable }}

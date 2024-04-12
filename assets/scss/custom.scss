@@ -36,4 +36,10 @@
 .container-footer {
     @apply mx-auto px-4 py-8 2xl:max-w-[1320px];
 }
-  
+
+.image-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust as needed */
+}

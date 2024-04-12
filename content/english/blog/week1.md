@@ -1,10 +1,10 @@
 ---
-title: "Week 1 - Beginning of the project"
+title: "Week 1 (3rd Period) - Beginning of the project"
 meta_title: ""
 description: "meta description for week 1 blog post"
 date: 2024-02-18T13:28:00Z
 image: "/images/Blog/week1/ElectroCap-Challenge.png"
-categories: ["Weekly Progress"]
+categories: ["3rd Period - Weekly Progress"]
 authors:
   - "António Morais"
   - "Catarina Caramalho"
