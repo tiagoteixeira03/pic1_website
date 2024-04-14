@@ -50,7 +50,7 @@ As demonstrated in the images above, a map with a 3D point cloud provides signif
 Navigation using 2D LiDARs in domestic environments generally functions adequately but swiftly encounters the limitations of this technology. Consider, for example, the one-legged table in the image above; if the top is too large, the robot will collide with it. The same principle applies to various types of furniture, and 3D LiDARs overcome these barriers, ensuring easier autonomous navigation for the robot amidst static and dynamic obstacles, thus enhancing efficiency and precision.
 
 <!-- Since the project is part of the SocRob@Home team belonging to the Institute of Systems and Robotics (ISR), it is important to highlight what has already been done and what we are going to do.  -->
-Given that the project is part of the SocRob@Home team within the Institute of Systems and Robotics (ISR), it is crucial to emphasize what has already been accomplished and what we intend to undertake with our project.
+Given that the project is part of the SocRob@Home team within the Institute For Systems and Robotics (ISR), it is crucial to emphasize what has already been accomplished and what we intend to undertake with our project.
 
 </div>
 
