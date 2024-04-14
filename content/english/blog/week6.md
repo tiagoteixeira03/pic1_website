@@ -5,8 +5,7 @@ description: "meta description for week 6 blog post"
 date: 2024-03-24T13:28:00Z
 image: "/images/Blog/week5/cover.png"
 categories: ["3rd Period - Weekly Progress"]
-authors:
-  - "Catarina Caramalho"
+author: "Catarina Caramalho"
 tags: ["localization"]
 draft: false
 ---
