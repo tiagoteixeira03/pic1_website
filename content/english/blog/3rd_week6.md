@@ -133,3 +133,4 @@ Durante um teste real, a imprecisão do IMU é superior à da simulação, o que
 As can be seen in the plots, the maximum position error for the HDL is 0.35m, which contrasts with the maximum of 6m achieved by the MCL3D. With regard to orientation errors, the highest peak was 0.11m for the HDL and 3.1rad for the MCL3D. We can therefore conclude that HDL is indeed the best algorithm to use in simulation. However, this is not a sufficient condition for it to be the best algorithm to be implemented on the real robot. 
 During a real test, the inaccuracy of the IMU is higher than that of the simulation, which can improve the performance of MCL3D. On the other hand, HDL doesn't take into account the conditions of the real environment as much, so the theoretical results can be opposite to the real ones. This is why it is essential to test both algorithms in simulated and real environments.
 </div>
+
