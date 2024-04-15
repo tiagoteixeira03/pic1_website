@@ -82,6 +82,7 @@ Figures 4 and 5 indicate that the subsequent navigation tasks will be developed:
     The 3D localization will be achieved by researching alternative algorithms to AMCL. Existing algorithms capable of capturing a 3D point cloud from the Ouster OS1 LiDAR will be adapted. The objective is to test at least two options in simulation and determine which one is optimal for proceeding with real tests on the robot.
 
 - ##### 2D Path Planning/Guidance
+    This task involves converting the 3D point cloud acquired by the Ouster Sensor into obstacles on a 2D map. This conversion will be achieved by modifying an [existing ROS node](https://github.com/ros-perception/pointcloud_to_laserscan) to discard points above the robot's current height. Additionally, we'll develop a new node to constantly update the robot's footprint based on its arm position. This task ensures full compatibility of the 3D Ouster Sensor with existing path planning and guidance algorithms.
 <!-- - ##### 3D Path Planning/Guidance -->
 
 </div>
