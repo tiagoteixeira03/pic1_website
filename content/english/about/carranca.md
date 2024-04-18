@@ -21,4 +21,4 @@ social:
     link: https://www.linkedin.com/in/joaocarranca/
 ---
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
+Responsible for 2D Path Planning and Guidance. My work involves adapting an existing ROS Node to dynamically consider the robot's height and footprint when converting the Ouster point cloud into obstacles on a 2D map.  

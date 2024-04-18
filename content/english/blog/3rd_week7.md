@@ -5,7 +5,7 @@ description: "meta description for week 7 blog post"
 date: 2024-03-31T13:28:00Z
 image: "/images/Blog/3rd_week7/cover.png"
 categories: ["3rd Period - Weekly Progress"]
-author: 
+authors: 
   - "António Morais"
   - "João Pinheiro"
   - "Catarina Caramalho"
@@ -81,54 +81,48 @@ Subsequently, the team attempted to synchronize the components but did not succe
 
 #### 3D Localization
 
-<div style="text-align: justify;">
-
-After last week advances, due t
-</div>
-
-##### Simulation Results
+<!-- ##### Simulation Results -->
 <div style="text-align: justify;">
 
 <!-- Ao correr os algoritmos, foi tambem corrido em paralelo um script em python desenvolvido pelos alunos, cujo objetivo é obter os erros face à localização e à orientação de ambos algoritmos, com o fim de comparar numericamente as alternativas.
 Os resultados obtidos são os seguintes: -->
 <!--During the execution of the algorithms, the students also simultaneously ran a Python script they had developed. -->
-
 After last week advances, the team developed and ran a Python script, during the execution of both algorithms.
 The aim of this script is to calculate the localization and orientation errors of both algorithms in order to make a numerical comparison of them. 
 The plots of the position errors as a function of time and the orientation errors as a function of time are the following:
 </div>
 
 <div class="image-container">
-    <div class="image">
-        {{< image 
-            src="/images/Blog/3rd_week6/position.png" 
-            caption="Figure 3 - Position errors as a function of Time" 
-            alt="HDL Localization" 
-            height="" 
-            width="" 
-            position="center" 
-            command="fill" 
-            option="q100" 
-            class="img-fluid" 
-            title="HDL Localization"  
-            webp="false" 
-        >}}
-    </div>
-    <div class="image">
-        {{< image 
-            src="/images/Blog/3rd_week6/orientation.png" 
-            caption="Figure 4 - Orientation errors as a function of Time" 
-            alt="MCL3D" 
-            height="" 
-            width="" 
-            position="center" 
-            command="fill" 
-            option="q100" 
-            class="img-fluid" 
-            title="MCL3D"  
-            webp="false" 
-        >}}
-    </div>
+  <div class="image">
+    {{< image 
+        src="/images/Blog/3rd_week7/position.png" 
+        caption="Figure 4 - Position errors as a function of Time" 
+        alt="HDL Localization" 
+        height="" 
+        width="" 
+        position="center" 
+        command="fill" 
+        option="q100" 
+        class="img-fluid" 
+        title="HDL Localization"  
+        webp="false" 
+    >}}
+  </div>
+  <div class="image">
+    {{< image 
+        src="/images/Blog/3rd_week7/orientation.png" 
+        caption="Figure 5 - Orientation errors as a function of Time" 
+        alt="MCL3D" 
+        height="" 
+        width="" 
+        position="center" 
+        command="fill" 
+        option="q100" 
+        class="img-fluid" 
+        title="MCL3D"  
+        webp="false" 
+    >}}
+  </div>
 </div>
 
 <div style="text-align: justify;">
@@ -143,12 +137,10 @@ During a real test, the inaccuracy of the IMU is higher than that of the simulat
 
 <div style="text-align: justify;">
 
-Also it is important to refer that the result of the plot, was between -2&pi; and 2&pi;, and we had to normalize it to be between 0 and 2&pi:, due to the physical constraints of the robot.
-
+Also it is important to refer that the result of the plot, was between -2&pi; and 2&pi;, and we had to normalize it to be between 0 and 2&pi;, due to the physical constraints of the robot.
 </div>
 
 <div style="text-align: justify;">
 
 After getting the results of the plots, and analyze them carefully, the team decided to experiment both algorithms in the robot, but due to some technical problems, with the robot, we were not able to try them. We are looking forward to do so in the next couple of weeks.
-
 </div>
