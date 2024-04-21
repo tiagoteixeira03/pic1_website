@@ -9,7 +9,8 @@ authors:
   - "António Morais"
   - "João Pinheiro"
   - "Catarina Caramalho"
-tags: ["mapping", "localization"]
+  - "Tiago Teixeira"
+tags: ["mapping", "localization", "path planning"]
 draft: false
 ---
 
@@ -143,4 +144,27 @@ Also it is important to refer that the result of the plot, was between -2&pi; an
 <div style="text-align: justify;">
 
 After getting the results of the plots, and analyze them carefully, the team decided to experiment both algorithms in the robot, but due to some technical problems, with the robot, we were not able to try them. We are looking forward to do so in the next couple of weeks.
+</div>
+
+#### 2D Path Planning/Guidance
+
+
+Last week, we began modifying the code of the [poincloud_to_laserscan node](https://github.com/ros-perception/pointcloud_to_laserscan), but we ran into some errors that prevented us from calculating the robot's height based on the transform from the head frame to the base frame. Fortunately, we managed to resolve these issues and accurately calculate the height value. The next step was to determine how frequently we wanted to update this value, and we decided on a frequency of 1 Hz for now.
+
+As shown in the gif below, our modifications to the node had the desired effect. As we extended the robot's torso, the value for the maximum_height variable changed in real time.
+
+<div class="image-container">
+    {{< image 
+        src="/images/Blog/3rd_week7/dynamic height.gif" 
+        caption="Figure 6 - Robot's Height Updating in Real Time" 
+        alt="Dynamic Height" 
+        height="" 
+        width="" 
+        position="center" 
+        command="fill" 
+        option="q100" 
+        class="img-fluid" 
+        title="Dynamic Height"  
+        webp="false" 
+    >}}
 </div>

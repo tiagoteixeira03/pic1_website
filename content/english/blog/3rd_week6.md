@@ -1,12 +1,14 @@
 ---
-title: "Week 6 (3rd Period) - Localization"
+title: "Week 6 (3rd Period) - Localization, 2D Path Planning"
 meta_title: ""
 description: "meta description for week 6 blog post"
 date: 2024-03-24T13:28:00Z
 image: "/images/Blog/3rd_week6/cover.png"
 categories: ["3rd Period - Weekly Progress"]
-author: "Catarina Caramalho"
-tags: ["localization"]
+authors:
+  - "Catarina Caramalho"
+  - "Tiago Teixeira"
+tags: ["localization", "path planning"]
 draft: false
 ---
 #### 3D Localization
@@ -82,3 +84,40 @@ Based on what has been explained previously, it is clear that this algorithm is 
 <!-- O gif acima demonstra o MCL3D a ser testado em simulação, e com base no que já foi previamente explicado, facilmente se compreende que este algoritmo não é de todo o ideal em simulação, já que aparenta ser bastante instável e demosntra deslocalizações constantes, ou seja, o robot não sabe onde está. -->
 </div>
 
+#### 2D Path Planning/Guidance
+This week, our objective was to modify the [poincloud_to_laserscan node](https://github.com/ros-perception/pointcloud_to_laserscan). The aim was to dynamically adjust the maximum height variable, which sets the limit for the Ouster 3D points used in converting to 2D obstacles. Instead of a static value, we wanted it to be calculated based on the robot's height.
+
+We tried determining the robot's height by using the z-value of the transform from the head frame to the base frame. However, we encountered some errors related to the frames names, which impeded us from obtaining a correct value.
+
+<div class="image-container">
+    <div class="image">
+        {{< image 
+            src="/images/Blog/3rd_week6/robot.png" 
+            caption="Figure 3 - Robot Model" 
+            alt="Robot Model" 
+            height="" 
+            width="" 
+            position="center" 
+            command="fill" 
+            option="q100" 
+            class="img-fluid" 
+            title="Robot Model"  
+            webp="false" 
+        >}}
+    </div>
+    <div class="image">
+        {{< image 
+            src="/images/Blog/3rd_week6/tfs.png" 
+            caption="Figure 4 - Robot Frames" 
+            alt="Robot Frames" 
+            height="" 
+            width="" 
+            position="center" 
+            command="fill" 
+            option="q100" 
+            class="img-fluid" 
+            title="Robot Frames"  
+            webp="false" 
+        >}}
+    </div>
+</div>
