@@ -4,10 +4,19 @@ banner:
   title: "Indoor 3D-Sensor Based Navigation"
   content: "Welcome to our project! We are a team of six students at Instituto Superior Técnico (IST) within the ElectroCap Program, an initiative from the Department of Electrical and Computer Engineering (DEEC) under the 1st Cycle Integrated Project (PIC1). Along with SocRob@Home at the Institute For Robotics and Systems (ISR) we are working on a TIAGo robot, developing an indoor 3D-sensor based navigation."
   image: "/images/tiago_robot.gif"
-  button:
+  button1:
     enable: true
-    label: "Open Presentation"
+    label: "Project Proposal"
     link: "https://www.canva.com/design/DAF0t_JUzpc/f3WcNTHnj8x-dZn2-DHEHw/view?utm_content=DAF0t_JUzpc&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel"
+  button2:
+    enable: true
+    label: "Mid Pitch"
+    link: "https://www.canva.com/design/DAGAueGpeZM/rh1ha0BIs6-gmOG1o_zcTQ/edit?utm_content=DAGAueGpeZM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+  button3:
+    enable: true
+    label: "Final Pitch"
+    link: ""
+
 
 # Features
 features:
