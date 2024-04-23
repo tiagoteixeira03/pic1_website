@@ -1,5 +1,5 @@
 ---
-title: "Midterm break - Mid-Program Pitch Deck and Exams"
+title: "Midterm break"
 meta_title: ""
 description: "meta description for week 8&9 blog post"
 date: 2024-04-14T13:28:00Z

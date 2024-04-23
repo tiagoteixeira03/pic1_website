@@ -11,7 +11,7 @@ banner:
   button2:
     enable: true
     label: "Mid Pitch"
-    link: "https://www.canva.com/design/DAGAueGpeZM/rh1ha0BIs6-gmOG1o_zcTQ/edit?utm_content=DAGAueGpeZM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    link: "https://www.canva.com/design/DAGAueGpeZM/JpdjW6i70tnA4kLCANwFoA/view?utm_content=DAGAueGpeZM&utm_campaign=designshare&utm_medium=link&utm_source=editor"
   button3:
     enable: true
     label: "Final Pitch"

@@ -1,9 +1,9 @@
 ---
-title: "Week 1 (4th Period) - Dynamic Footprint"
+title: "Week 1 (4th Period)"
 meta_title: ""
 description: "meta description for week 1 blog post"
 date: 2024-04-21T13:28:00Z
-image: "/images/Blog/4th_week1/footprint-cover.png"
+image: "/images/Blog/4th_week1/cover.png"
 categories: ["4th Period - Weekly Progress"]
 authors:
   - "António Morais"

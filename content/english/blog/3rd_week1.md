@@ -1,5 +1,5 @@
 ---
-title: "Week 1 (3rd Period) - Beginning of the project"
+title: "Week 1 (3rd Period)"
 meta_title: ""
 description: "meta description for week 1 blog post"
 date: 2024-02-18T13:28:00Z

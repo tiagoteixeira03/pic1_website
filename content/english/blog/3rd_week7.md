@@ -1,5 +1,5 @@
 ---
-title: "Week 7 (3rd Period) - Test"
+title: "Week 7 (3rd Period)"
 meta_title: ""
 description: "meta description for week 7 blog post"
 date: 2024-03-31T13:28:00Z

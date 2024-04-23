@@ -1,5 +1,5 @@
 ---
-title: "Week 2 (3rd Period) - 3D Mapping"
+title: "Week 2 (3rd Period)"
 meta_title: ""
 description: "meta description for week 2 blog post"
 date: 2024-02-25T13:28:00Z

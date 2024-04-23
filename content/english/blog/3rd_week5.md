@@ -1,5 +1,5 @@
 ---
-title: "Week 5 (3rd Period) - 3D Mapping, Localization and 2D Path Planning"
+title: "Week 5 (3rd Period)"
 meta_title: ""
 description: "meta description for week 5 blog post"
 date: 2024-03-17T13:28:00Z
