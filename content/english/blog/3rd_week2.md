@@ -10,7 +10,7 @@ tags: ["mapping"]
 draft: false
 ---
 
-#### Mapping
+#### 3D Mapping
 
 ##### → A-LOAM
 
@@ -32,14 +32,14 @@ The encountered setback arose from the team's reliance on [Ubuntu 20.04](https:/
 ##### → LIO-SAM
 <div style="text-align: justify;">
 
-Keeping this in mind the team chose to explore (although not planned to do so) the [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM) algorithm while thinking of a solution for the A-LOAM algorithm. 
+Keeping this in mind the team chose to explore (although not planned to do so) the [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM) algorithm while thinking of a solution for the [A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM) algorithm. 
 
 Notably, we encountered existing GitHub issues ([#206](https://github.com/TixiaoShan/LIO-SAM/issues/206))addressing compilation challenges specific to ROS Noetic, facilitating our implementation efforts. We then successfully conducted testing using one of the datasets (`walking_dataset.bag`) provided by the authors. 
 </div>
 
 {{< image 
     src="/images/Blog/3rd_week2/LIO-SAM_DATASET.jpg" 
-    caption="Figure 1 - Map obtained utilizing LIO-SAM alongside one of the datasets provided by the authors" 
+    caption="Figure 1 - Map obtained utilizing LIO-SAM alongside one of the datasets provided by the authors." 
     alt="alter-text" 
     height="300px" 
     width="500px" 

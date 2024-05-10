@@ -16,7 +16,7 @@ draft: false
 During the first week since the start of the 2<sup>nd</sup> semester and along with it, the ElectroCap Challenge, the team focused on launching the current website this is written on. As of now, it is still a very early version of the website and we already have feedback to start changing how it looks and it's contents.
 </div>
 
-#### Mapping
+#### 3D Mapping
 
 ##### → A-LOAM
 
@@ -33,7 +33,7 @@ During the first week since the start of the 2<sup>nd</sup> semester and along w
 <!-- António Morais subsequently undertook the task of familiarizing himself with Docker's fundamentals. He then endeavored to execute the algorithm using a dataset provided by the authors. Despite successfully exporting the roscore from Docker to his local machine, an unforeseen issue arose during visualization in [Rviz](http://wiki.ros.org/rviz), where the gathered environmental data failed to display.  -->
 <div style="text-align: justify;">
 
-Thinking about Week 3 problems encountered the team studied more in depth the algorithm and found that the anomaly stemmed from discrepancies in the algorithm's code, particularly in the handling of `.frame_id` parameters, necessitating adjustments to accommodate variations across different versions of ROS.
+Thinking about Week 3 (3<sup>rd</sup> Period) problems encountered the team studied more in depth the algorithm and found that the anomaly stemmed from discrepancies in the algorithm's code, particularly in the handling of `.frame_id` parameters, necessitating adjustments to accommodate variations across different versions of ROS.
 </div>
 
 ```cpp 
@@ -50,7 +50,7 @@ With these modifications implemented throughout the codebase, the algorithm succ
 
 {{< image 
     src="/images/Blog/3rd_week4/A-LOAM_DATASET.jpeg" 
-    caption="Figure 1 - Map obtained utilizing the A-LOAM algorithm alongside one of the datasets provided by the authors" 
+    caption="Figure 1 - Map obtained utilizing the A-LOAM algorithm alongside one of the datasets provided by the authors." 
     alt="alter-text" 
     height="300px" 
     width="500px" 
@@ -80,7 +80,7 @@ Following these adjustments, we successfully generated a map of the simulation e
 
 {{< image 
     src="/images/Blog/3rd_week4/A-LOAM_Simulation.jpeg" 
-    caption="Figure 2 - Simulation environment (left); Map of the simulation environment obtained with A-LOAM (right)" 
+    caption="Figure 2 - Simulation environment (left); Map of the simulation environment obtained with A-LOAM (right)." 
     alt="alter-text" 
     height="" 
     width="" 

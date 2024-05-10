@@ -7,8 +7,8 @@ image: "/images/Blog/3rd_week7/cover.png"
 categories: ["3rd Period - Weekly Progress"]
 authors: 
   - "António Morais"
-  - "João Pinheiro"
   - "Catarina Caramalho"
+  - "João Pinheiro"
   - "Tiago Teixeira"
 tags: ["mapping", "localization", "path planning"]
 draft: false
@@ -39,7 +39,7 @@ During this week, the team delved into testing the [LIO-SAM](https://github.com/
 
 {{< image 
   src="/images/Blog/3rd_week7/imu-debug.gif" 
-  caption="Figure 2 - IMU debug (TixiaoShan/LIO-SAM: LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping.” Accessed: Apr. 14, 2024.)" 
+  caption="Figure 2 - IMU debug (TixiaoShan/LIO-SAM: LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping.” Accessed: Apr. 14, 2024.)." 
   alt="alter-text" 
   height="300px" 
   width="800px" 
@@ -63,7 +63,7 @@ Following this discovery, the team identified a solution and began working with 
 
 {{< image 
   src="/images/Blog/3rd_week7/jackal.jpeg" 
-  caption="Figure 3 - Jackal robot from ISR" 
+  caption="Figure 3 - Jackal robot from ISR." 
   alt="alter-text" 
   height="600px" 
   width="500px" 
@@ -97,7 +97,7 @@ The plots of the position errors as a function of time and the orientation error
   <div class="image">
     {{< image 
         src="/images/Blog/3rd_week7/position.png" 
-        caption="Figure 4 - Position errors as a function of Time" 
+        caption="Figure 4 - Position errors as a function of Time." 
         alt="HDL Localization" 
         height="" 
         width="" 
@@ -112,7 +112,7 @@ The plots of the position errors as a function of time and the orientation error
   <div class="image">
     {{< image 
         src="/images/Blog/3rd_week7/orientation.png" 
-        caption="Figure 5 - Orientation errors as a function of Time" 
+        caption="Figure 5 - Orientation errors as a function of Time." 
         alt="MCL3D" 
         height="" 
         width="" 
@@ -156,7 +156,7 @@ As shown in the gif below, our modifications to the node had the desired effect.
 <div class="image-container">
     {{< image 
         src="/images/Blog/3rd_week7/dynamic height.gif" 
-        caption="Figure 6 - Robot's Height Updating in Real Time" 
+        caption="Figure 6 - Robot's Height Updating in Real Time." 
         alt="Dynamic Height" 
         height="" 
         width="" 

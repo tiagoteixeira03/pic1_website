@@ -36,7 +36,7 @@ The gif below shows the HDL algorithm being tested in simulation. The red points
 <div class="image-container">
     {{< image 
         src="/images/Blog/3rd_week6/hdl.gif" 
-        caption="Figure 1 - HDL Algorithm tested in Simulation" 
+        caption="Figure 1 - HDL Algorithm tested in Simulation." 
         alt="HDL Localization" 
         height="" 
         width="" 
@@ -65,7 +65,7 @@ The image below illustrates MCL3D being tested in simulation.
 <div class="image-container">
     {{< image 
         src="/images/Blog/3rd_week6/mcl3d.gif" 
-        caption="Figure 2 - MCL3D Algorithm tested in Simulation" 
+        caption="Figure 2 - MCL3D Algorithm tested in Simulation." 
         alt="HDL Localization" 
         height="" 
         width="" 
@@ -93,7 +93,7 @@ We tried determining the robot's height by using the z-value of the transform fr
     <div class="image">
         {{< image 
             src="/images/Blog/3rd_week6/robot.png" 
-            caption="Figure 3 - Robot Model" 
+            caption="Figure 3 - Robot Model." 
             alt="Robot Model" 
             height="" 
             width="" 
@@ -108,7 +108,7 @@ We tried determining the robot's height by using the z-value of the transform fr
     <div class="image">
         {{< image 
             src="/images/Blog/3rd_week6/tfs.png" 
-            caption="Figure 4 - Robot Frames" 
+            caption="Figure 4 - Robot Frames." 
             alt="Robot Frames" 
             height="" 
             width="" 

@@ -5,8 +5,10 @@ description: "meta description for week 1 blog post"
 date: 2024-04-28T13:28:00Z
 image: "/images/Blog/4th_week2/cover.png"
 categories: ["4th Period - Weekly Progress"]
-author: "António Morais"
-tags: ["mapping"]
+authors: 
+  - "António Morais"
+  - "João Carranca"
+tags: ["mapping", "path planning"]
 draft: false
 ---
 
@@ -16,118 +18,119 @@ draft: false
 
 <div style="text-align: justify;">
 
-<!-- Following Week 7's updates the team proceeded to find some intrinsic parameters of the inertial measurement unit (IMU) that are required to be of input in the `LIO-SAM/config/params.yaml` file of the algorithm: -->
-Following the updates in Week 7 (3<sup>rd</sup> Period), the team proceeded to find some intrinsic parameters of the inertial measurement unit (IMU) that are required as inputs in the `LIO-SAM/config/params.yaml` file of the algorithm.
+<!-- Following last weeks advancements the algorithm still requires some parameters that represent the transformation of the system LiDAR-IMU (inertial measurement unit). This transformation was presented in Week 7's post (3<sup>rd</sup> Period). These will be an input to the `LIO-SAM/config/params.yaml` file: -->
+Following last week's advancements, the algorithm still requires parameters representing the transformation of the LiDAR-IMU system (inertial measurement unit). This transformation was presented in the post from Week 7 (3<sup>rd</sup> Period). These parameters will serve as input to the `LIO-SAM/config/params.yaml` file.
 </div>
 
 ```yaml
-# IMU Settings - the following numbers are examples
-imuAccNoise: 3.9939570888238808e-03   
-imuGyrNoise: 1.5636343949698187e-03
-imuAccBiasN: 6.4356659353532566e-05
-imuGyrBiasN: 3.5640318696367613e-05
+# Extrinsics: T_lb (lidar -> imu) - not changed
+extrinsicTrans: [0.0, 0.0, 0.0]
+extrinsicRot: [-1, 0, 0,
+               0, 1, 0,
+               0, 0, -1]
+extrinsicRPY: [0, -1, 0,
+               1, 0, 0,
+               0, 0, 1]
 ```
 
 <div style="text-align: justify;">
 
-<!-- To find these parameters the team made research about these, such as searching through the documentation of the IMU but did not find such parameters or anything similar. Thankfully there were other people that came across this problem and suggested a package to find these parameters. The team then dove into the so called [`imu_utils`](https://github.com/gaowenliang/imu_utils) package but had some setbacks with errors of the code itself but not of this particular package but of a dependencie of it, another package called [`code_utils`](https://github.com/gaowenliang/code_utils) from the same author of the other one. -->
-To identify these parameters, the team delved into researching various resources, including the documentation of the IMU. However, despite their efforts, they didn't uncover the specific parameters needed. Fortunately, it was found that others had encountered the same issue and suggested utilizing a package designed for this purpose. This led the team to explore the [`imu_utils`](https://github.com/gaowenliang/imu_utils) package, a tool recommended by fellow users. While diving into this solution, some challenges were encountered. The code itself was error-free, but difficulties arose with one of its dependencies, namely the [`code_utils`](https://github.com/gaowenliang/code_utils) package from the same author.
+<!-- To obtain these parameters a package is refered on issue [#335](https://github.com/TixiaoShan/LIO-SAM/issues/335) of the [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM) GitHub repository. The package is called [LiDAR_IMU_Init](https://github.com/hku-mars/LiDAR_IMU_Init) which calibrates the temporal offset and extrinsic parameter between LiDARs and IMUs. -->
+To obtain these parameters, a package referenced in issue [#335](https://github.com/TixiaoShan/LIO-SAM/issues/335) of the [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM) GitHub repository is utilized. The package is known as [LiDAR_IMU_Init](https://github.com/hku-mars/LiDAR_IMU_Init), designed to calibrate the temporal offset and extrinsic parameters between LiDARs and IMUs.
 
-<!-- The first error came from trying to build the package itself ([`code_utils`](https://github.com/gaowenliang/code_utils)) about an include problem (this is also documented in issue [#12](https://github.com/gaowenliang/imu_utils/issues/12)): -->
-The initial error arose when attempting to build the package itself, specifically the [`code_utils`](https://github.com/gaowenliang/code_utils) package, due to an include problem. This issue has also been documented in detail in issue [#12](https://github.com/gaowenliang/imu_utils/issues/12) on the GitHub repository of [`imu_utils`](https://github.com/gaowenliang/imu_utils).
+<!-- The student responsible for mapping delved into this package and configurated it using [Docker](https://www.docker.com/) once again. To set up the environment it is first needed to `git clone` the GitHub repository and then build the [Docker](https://www.docker.com/) image: -->
+The student in charge of mapping explored this package and configured it using [Docker](https://www.docker.com/) once again. Setting up the environment involves first `git clone` of the GitHub repository and then building the [Docker](https://www.docker.com/) image:
 </div>
 
-```cpp
-// File path: code_utils/src/sumpixel_test.cpp
-include "backward.hpp"  // wrong - insert '#' at the beginning
-include "code_utils/backward.hpp"  // corrected - insert '#' at the beginning
+```bash
+$ cd ~/catkin_ws/src/LiDAR_IMU_Init/docker
+$ docker build -t <repo_name>:<tag>
 ```
-
 <div style="text-align: justify;">
 
-<!-- The next errors are documented in issue [#32](https://github.com/gaowenliang/imu_utils/issues/32). Basicaly there are a bunh of MACROS that need to be changed in the files `code_utils/src/mat_io_test.cpp` and `code_utils/src/sumpixel_test.cpp`: -->
-The subsequent errors are outlined in issue [#32](https://github.com/gaowenliang/imu_utils/issues/32) on the GitHub repository of [`imu_utils`](https://github.com/gaowenliang/imu_utils). Essentially, there are several macros that need to be modified within the files `code_utils/src/mat_io_test.cpp` and `code_utils/src/sumpixel_test.cpp`.
+Then enter the command below in the local terminal to enable [Docker](https://www.docker.com/) to communicate with Xserver on the host:
 </div>
 
-```cpp
-// Change the ones on the left to the ones on the right
-CV_LOAD_IMAGE_GRAYSCALE -> IMREAD_GRAYSCALE
-CV_MINMAX -> CV::NORM_MINMAX
-CV_LOAD_IMAGE_UNCHANGED -> IMREAD_UNCHANGED
-```
-
-And finally an error on the `code_utils/CMakeList.txt` file:
-
-```cmake
-set(CMAKE_CXX_FLAGS "-std=c++11")  # wrong
-set(CMAKE_CXX_STANDARD14)  # corrected
+```bash
+$ xhost +local:docker
 ```
 
 <div style="text-align: justify;">
 
-<!-- With all of these errors taken care of it was now possible to run the package but to do so a dataset was required. This dataset consisted of at least two hours of duration of IMU data which was exactly what was done. -->
-With all of these errors taken care of, it became possible to run the package. However, to do so, a dataset was required. This dataset needed to consist of at least two hours of IMU data, which was exactly what was obtained.
-
-<!-- After this it was created a `.launch` file for the IMU being used in which the topic of the IMU data, the name of the IMU and the minimum duration of data collection (in minutes) were changed: -->
-Afterward, a `.launch` file was created for the IMU being used. In this file, the topic of the IMU data, the name of the IMU, and the minimum duration of data collection (in minutes) were modified.
+With this done one can now run the container of the package with the following command:
 </div>
 
-```xml
-<launch>
-    <node pkg="imu_utils" type="imu_an" name="imu_an" output="screen">
-        <param name="imu_topic" type="string" value= "/imu/data_raw"/>  <!-- Changed IMU topic name -->
-        <param name="imu_name" type="string" value= "px4"/>  <!-- Changed IMU name -->
-        <param name="data_save_path" type="string" value= "$(find imu_utils)/data/"/>
-        <param name="max_time_min" type="int" value= "105"/>  <!-- Changed minimum time (in minutes) for collection of data -->
-        <param name="max_cluster" type="int" value= "100"/>
-    </node>
-</launch>
+```bash
+$ dockerdocker run --privileged -it \
+   --volume=${LiDAR_IMU_Init_repo_root}:/home/catkin_ws/src \
+   --volume=/tmp/.X11-unix:/tmp/.X11-unix:rw \
+   --net=host \
+   --ipc=host \
+   --shm-size=1gb \
+   --name=${docker container name} \
+   --env="DISPLAY=$DISPLAY" \
+   ${docker image name} /bin/bash
 ```
 
 <div style="text-align: justify;">
 
-<!-- Once this taken care of one could now run the package for the dataset constructed. After this the team obtained the parameters they needed which were witten: -->
-Once these adjustments were made, the package could be executed with the constructed dataset. Following this, the team obtained the necessary parameters:
+<!-- A terminal inside the container should open up and now the the package needs to be compiled, then is needed to source the environment and run the actual package. The following commands do all the steps mentioned. -->
+A terminal inside the container should open up. Now, the package needs to be compiled. Then, it's necessary to source the environment and run the actual package. The following commands perform all the mentioned steps.
 </div>
 
-```yaml
-#  File path: imu_utils/data/px4_imu_param.yaml
-%YAML:1.0
----
-type: IMU
-name: px4
-Gyr:
-   unit: " rad/s"
-   avg-axis:
-      gyr_n: 1.8191460790771266e-03  # imuGyrNoise
-      gyr_w: 4.5119119003007975e-05  # imuGyrBiasN
-   x-axis:
-      gyr_n: 1.9496415895800541e-03
-      gyr_w: 4.1344704259625771e-05
-   y-axis:
-      gyr_n: 1.6858078760147014e-03
-      gyr_w: 6.7641044580978528e-05
-   z-axis:
-      gyr_n: 1.8219887716366247e-03
-      gyr_w: 2.6371608168419629e-05
-Acc:
-   unit: " m/s^2"
-   avg-axis:
-      acc_n: 2.5432491530286979e-02  # imuAccNoise
-      acc_w: 7.9166594255487604e-04  # imuAccBiasN
-   x-axis:
-      acc_n: 3.4098258318774562e-02
-      acc_w: 9.3291404872930051e-04
-   y-axis:
-      acc_n: 2.2888249908200251e-02
-      acc_w: 7.7128773939743591e-04
-   z-axis:
-      acc_n: 1.9310966363886121e-02
-      acc_w: 6.7079603953789149e-04
+```bash
+$ catkin_make
+$ source devel/setup.bash
+$ roslaunch lidar_imu_init <filename>.launch
 ```
 
 <div style="text-align: justify;">
 
-<!-- Next week teams efforts will be towards finding other parameters required for the algorithm in discussion that will be described on next weeks post. -->
-Next week, the team's efforts will be focused on finding other parameters required for the algorithm under discussion, which will be described in next week's post.
+<!-- Similarly to other packages/algorithms used the team firstly checked if the method was working with the authors provided datasets. The one tested is called `VLP16_IMU.bag` and is available to download in the [LiDAR_IMU_Init](https://github.com/hku-mars/LiDAR_IMU_Init) GitHub repository. This one is specially important to test because the LiDAR is the same as the one that the team is using with the [Jackal](https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/) robot and also contains data from an external IMU (same situation as the team's). -->
+Similarly to other packages and algorithms used, the team initially checked if the method was working with the authors' provided datasets. The one tested is called `VLP16_IMU.bag` and is available for download in the [LiDAR_IMU_Init](https://github.com/hku-mars/LiDAR_IMU_Init) GitHub repository. This dataset is particularly important to test because the LiDAR is the same as the one that the team is using with the [Jackal](https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/) robot and also contains data from an external IMU, mirroring the team's setup.
+</div>
+
+{{< image 
+  src="/images/Blog/4th_week2/lidar_imu_init.gif" 
+  caption="Figure 1 - Process of running the VLP16_IMU.bag dataset." 
+  alt="alter-text" 
+  height="300px" 
+  width="800px" 
+  position="center" 
+  command="fill" 
+  option="q100" 
+  class="img-fluid" 
+  title="image title"  
+  webp="false" 
+>}}
+
+<div style="text-align: justify;">
+
+<!-- One can see from the video above that the package seems to be working fine as during the play of the dataset as it detected the degree of excitation of each axis, then does an online refinement for to play the the [FAST-LIO](https://github.com/hku-mars/FAST_LIO) algorithm to verify that the parameters determined by the synchronization are fine. This is also noticed by watching the map being constructed. -->
+From the video above, it appears that the package is functioning properly. During the dataset playback, it successfully detects the degree of excitation of each axis. Additionally, it performs an online refinement to apply the [FAST-LIO](https://github.com/hku-mars/FAST_LIO) algorithm, verifying the accuracy of the parameters determined by the synchronization process. This can also be observed by observing the construction of the map.
+
+<!-- Further real tests with the [Jackal](https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/) robot were performed this week but they are not documented here as they were not conclusive in a way that no important results were achieved. -->
+Further real tests were conducted with the [Jackal](https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/) robot this week. However, the outcomes were inconclusive as no significant results were achieved.
+</div>
+
+### 2D Path Planning/Guidance
+
+<div style="text-align: justify;">
+
+<!-- During week 2, we tested both nodes of our code in simulation to verify whether or not the code we have developed has the impact we expect. 
+
+For this, we designed specific tests to properly evaluate both the dynamic adjustments of the robot's height and the dynamic adjustment of its footprint. 
+
+For the footprint, for example, we tested situations where the extension of the robot's arm would have an impact on its course and decision to take specific paths or not. One of these tests, for example, involved putting the simulated robot in front of an entry point that would be traversable with the arm in its contained state but not while fully spread out. We would expect, in such a setting, that in the first case, the robot would advance without issue, while halting its progress in the second case due to it realizing that a collision would occur. This is indeed what we observed in simulation, proving that the footprint adjustment works in practical scenarios that involve interactions with the simulated environment. 
+
+For the height adjustment node, we used a similar approach, using an obstacle that would be insignificant if the robot's height was small enough but that would become an obstacle after a certain height limit is reached and surpassed. Similarly to the footprint case, we observed that in the first scenario, the robot progresses without issue, while in the second scenario, it halts its progress in order to avoid collisions. 
+
+With these tests and other similar ones, we were able to verify that, in a simulated environment, we achieve the expected results, confirming the validity of the developed code. -->
+During this week, the team conducted tests on both nodes of the code in simulation to assess their impact as intended. Specific tests were devised to evaluate the dynamic adjustments of the robot's height and footprint.
+
+For the footprint adjustments, scenarios were designed to assess situations where the extension of the robot's arm would affect its path selection. One test involved placing the simulated robot in front of an entry point that was traversable with the arm in a contained state but not when fully extended. The simulation demonstrated that the robot advanced smoothly in the former case but halted in the latter to avoid a collision, validating the effectiveness of the footprint adjustment in practical scenarios.
+
+Similarly, for the height adjustment node, tests were conducted using obstacles that were insignificant at lower heights but became obstacles at higher elevations. The simulation revealed that the robot progressed unhindered at lower heights but stopped to avoid collisions when surpassing the height limit.
+
+Through these tests and others, the team confirmed in the simulated environment that the code achieved the expected results, validating its effectiveness.
 </div>

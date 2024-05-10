@@ -21,7 +21,7 @@ However, the team did have their presentation of the Mid-Program Pitch during th
 
 {{< image 
   src="/images/Blog/3rd_week8&9/Midterm_pic.jpg" 
-  caption="Figure 1 - The team presenting their Mid-Program Pitch" 
+  caption="Figure 1 - The team presenting their Mid-Program Pitch." 
   alt="alter-text" 
   height="480px" 
   width="700px" 

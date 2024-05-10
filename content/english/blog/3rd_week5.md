@@ -24,7 +24,7 @@ This week, the team collected real data from the robot's Ouster LiDAR to conduct
 
 {{< image 
   src="/images/Blog/3rd_week5/teleop.gif" 
-  caption="Figure 1 - Teleoperating the real robot to gather real data" 
+  caption="Figure 1 - Teleoperating the real robot to gather real data." 
   alt="alter-text" 
   height="300px" 
   width="500px" 
@@ -39,7 +39,7 @@ This week, the team collected real data from the robot's Ouster LiDAR to conduct
 <div style="text-align: justify;">
 
 <!-- After building a dataset with real data, the team proceded to test A-LOAM with it. Following is presented the obtained map: -->
-After assembling a dataset with real data, the team proceeded to test A-LOAM with it. Below is the map obtained from the testing:
+After assembling a dataset with real data, the team proceeded to test [A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM) with it. Below is the map obtained from the testing:
 </div>
 
 <div class="image-slider-container">
@@ -55,7 +55,7 @@ After assembling a dataset with real data, the team proceeded to test A-LOAM wit
             zoomable="true" 
         >}}
     </div>
-    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 2 - Map of the laboratory of systems and robotics (where the testbed is located), using A-LOAM with real data aquired from the robot's Ouster</p>
+    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 2 - Map of the laboratory of systems and robotics (where the testbed is located), using A-LOAM with real data aquired from the robot's Ouster.</p>
 </div>
 
 <div style="text-align: justify;">
@@ -80,7 +80,7 @@ To enhance the quality of the dataset, the team repeated the process several tim
             zoomable="true" 
         >}}
     </div>
-    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 3 - Map of the testbed using A-LOAM with real data aquired from the robot's Ouster</p>
+    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 3 - Map of the testbed using A-LOAM with real data aquired from the robot's Ouster.</p>
 </div>
 
 <div style="text-align: justify;">
@@ -105,19 +105,19 @@ Subsequently, the team created a rosbag of the entire laboratory and achieved a 
             zoomable="true" 
         >}}
     </div>
-    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 4 - Map of the laboratory of systems and robotics (where the testbed is located), using A-LOAM with real data aquired from the robot's Ouster</p>
+    <p class="caption" style="color: #7f7f7f; font-size: 14px;">Figure 4 - Map of the laboratory of systems and robotics (where the testbed is located), using A-LOAM with real data aquired from the robot's Ouster.</p>
 </div>
 
 <div style="text-align: justify;">
 
 <!-- Note that the red points that seem that they are representing some kind of lower floor are also due to light reflections on the floor due to the varnished floor. -->
-Note that the red points, which appear to represent a lower floor, are also a result of light reflections on the varnished floor
+Note that the red points, which appear to represent a lower floor, are also a result of light reflections on the varnished floor.
 
 <!-- Aditionally, the team converted the simulation map obtained in Week 4 to a `.pcd` file with the [pcl_ros](http://wiki.ros.org/pcl_ros) package, which will be of use for the Localization team. -->
-Additionally, the team utilized the [pcl_ros](http://wiki.ros.org/pcl_ros) package to convert the simulation map obtained in Week 4 into a `.pcd` file, which will be of use for the Localization team.
+Additionally, the team utilized the [pcl_ros](http://wiki.ros.org/pcl_ros) package to convert the simulation map obtained in Week 4 (3<sup>rd</sup> Period) into a `.pcd` file, which will be of use for the Localization team.
 
 <!-- With this in mind we can consider A-LOAM ready and we may focus primarly on LIO-SAM going forward. Eventually it will be interesting to make a rosbag with no dynamic disturbances and noise caused by light reflections. -->
-With this in mind, we can consider A-LOAM ready, and our primary focus moving forward will be on [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM). Eventually, it will be advantageous to create a rosbag without dynamic disturbances and noise caused by light reflections and use it with A-LOAM.
+With this in mind, we can consider [A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM) ready, and our primary focus moving forward will be on [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM). Eventually, it will be advantageous to create a rosbag without dynamic disturbances and noise caused by light reflections and use it with [A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM).
 </div>
 
 #### 3D Localization
@@ -125,7 +125,7 @@ With this in mind, we can consider A-LOAM ready, and our primary focus moving fo
 ##### → AMCL3D
 <div style="text-align: justify;">
 
-During the first few weeks, the team concentrated on studying the [AMCL3D](https://github.com/catec/amcl3d) algorithm, as mentioned in Week 2. However, there were some setbacks when attempting to test the algorithm. 
+During the first few weeks, the team concentrated on studying the [AMCL3D](https://github.com/catec/amcl3d) algorithm, as mentioned in Week 2 (3<sup>rd</sup> Period). However, there were some setbacks when attempting to test the algorithm. 
 
 It was discovered that the algorithm was not compatible with [ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu) and [Ubuntu 20.04](https://releases.ubuntu.com/focal/), as it was developed for ROS [Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu) and [Ubuntu 16.04](https://ubuntu.com/16-04). Furthermore, the GitHub repository lacked a [Docker](https://docs.docker.com/get-started/overview/) file to get around this issue. As a result, the team had to search for new alternative solutions. 
 
@@ -168,7 +168,7 @@ The [HDL Localization](https://github.com/koide3/hdl_localization) algorithm use
 
 {{< image 
     src="/images/Blog/3rd_week5/hdl.gif" 
-    caption="Figure 5 - HDL Localization tested with a dataset as input" 
+    caption="Figure 5 - HDL Localization tested with a dataset as input." 
     alt="alter-text" 
     height="300px" 
     width="500px" 
@@ -189,7 +189,7 @@ The [HDL Localization](https://github.com/koide3/hdl_localization) algorithm use
 
 {{< image 
     src="/images/Blog/3rd_week5/mcl3d.gif" 
-    caption="Figure 6 - MCL3D alongside one of the datasets provided by the authors" 
+    caption="Figure 6 - MCL3D alongside one of the datasets provided by the authors." 
     alt="alter-text" 
     height="300px" 
     width="500px" 
@@ -204,7 +204,7 @@ The [HDL Localization](https://github.com/koide3/hdl_localization) algorithm use
 #### 2D Path Planning 
 <div style="text-align: justify;">
 
-In the fifth week, the team made significant progress in leveraging the point cloud generated by the Ouster for local and global path planning within the simulation environment.
+This week, the team made significant progress in leveraging the point cloud generated by the Ouster for local and global path planning within the simulation environment.
 
 To accomplish this, we made modifications to certain launch files, which were previously utilized to transmit the point cloud from the RGBD camera on the robot's torso to the pointcloud_to_laserscan node. Given that we already had a ROS topic in the simulation where the Ouster points were being published, our task primarily involved developing the code necessary to relay these points to the node mentioned previously.
 
@@ -215,7 +215,7 @@ As shown in Figure 8, the robot is now capable of detecting the obstacles in its
     <div class="image">
         {{< image 
             src="/images/Blog/3rd_week5/simulation_environment.png" 
-            caption="Figure 7 - Simulation Environment" 
+            caption="Figure 7 - Simulation Environment." 
             alt="HDL Localization" 
             height="" 
             width="" 
@@ -230,7 +230,7 @@ As shown in Figure 8, the robot is now capable of detecting the obstacles in its
     <div class="image">
         {{< image 
             src="/images/Blog/3rd_week5/ouster_laserscan.png" 
-            caption="Figure 8 - Ouster Points (Red) and Laserscan (Pink)" 
+            caption="Figure 8 - Ouster Points (Red) and Laserscan (Pink)." 
             alt="MCL3D" 
             height="" 
             width="" 
