@@ -8,7 +8,8 @@ categories: ["4th Period - Weekly Progress"]
 authors: 
     - "António Morais"
     - "Tiago Teixeira"
-tags: ["mapping", "general"]
+    - "João Pinheiro"
+tags: ["mapping", "general", "localization"]
 draft: false
 ---
 
@@ -193,4 +194,19 @@ The team members tasked with creating the Demo-Day video have commenced planning
 
 <!-- Additionally, since the video will be playing on a loop at the demo-day without sound, we plan to include subtitles. These subtitles will use simple language to explain our demonstrations, ensuring that everyone can easily understand the content. -->
 Furthermore, recognizing that the video will be playing on a loop at the demo-day without sound, the team plans to incorporate subtitles. These subtitles will utilize simple language to explain the demonstrations, ensuring that the content is easily understandable to all viewers.
+</div>
+
+#### 3D Localization
+
+<div style="text-align: justify;">
+
+<!--  Encontrámos um outro algoritmo do gajo do porto, tentámos utilizar e estudar o mesmo, mas não obtivemos sucesso mesmo apesar de longos esforços e tentativas - se calhar aqui tbm falar que estivemos a procura de outros algoritmos lemos papers mas que acabamos por não encontrar nada que se adequasse ao nosso trabalho
+ -->
+
+ We found another promising algorithm that we were willing to try and use, [dynamic_robot_localization](https://github.com/carlosmccosta/dynamic_robot_localization). 
+ 
+ At first it sounded promising, we tried to use it and studied it, but we didn't got any success, after a lot of effort we couldn't use it in simulation. 
+ 
+ So at the end we abandoned it and we are not going to use it in any part of our work, neither show any results of this algorithm.
+
 </div>

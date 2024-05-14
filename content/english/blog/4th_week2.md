@@ -8,7 +8,8 @@ categories: ["4th Period - Weekly Progress"]
 authors: 
   - "António Morais"
   - "João Carranca"
-tags: ["mapping", "path planning"]
+  - "João Pinheiro"
+tags: ["mapping", "path planning", "localization"]
 draft: false
 ---
 
@@ -133,4 +134,18 @@ For the footprint adjustments, scenarios were designed to assess situations wher
 Similarly, for the height adjustment node, tests were conducted using obstacles that were insignificant at lower heights but became obstacles at higher elevations. The simulation revealed that the robot progressed unhindered at lower heights but stopped to avoid collisions when surpassing the height limit.
 
 Through these tests and others, the team confirmed in the simulated environment that the code achieved the expected results, validating its effectiveness.
+</div>
+
+### 3D Localization
+
+<div style="text-align: justify;">
+
+<!-- Robô esteve avariado e estivemos à procura de novos algoritmos, alguns deles bastante interessantes e com possivel potencial, para além disso tentámos correr os dois algoritmos que já tinhamos testado em simulação no JACKAL um outro robô do ISR - acabámos por abandonar esta hipótese uma vez que não foi possivel correr este neste tipo de robô. -->
+
+The robot that we usually do the tests was broken, and the team were waiting for new pieces to arrive. So we couldn't do the tests with HDL algorithm and mcl3D algorithm. 
+
+So we decided that it would be good to search for new algorithms, and test them in simulation, similar as we did for the other two algorithms in order to test them and compare them, some of them were really interesting but it didn't apply to our robot or our sensors.
+
+Altough the usual robot was broken we tried to try the HDL algorithm and mcl3D algorithm in another robot of ISR, the JACKAL robot. We decided to abandon this idea, due to some problems in configuration of the robot, and its sensors, that were different from the robot that we are using.
+
 </div>
