@@ -142,10 +142,15 @@ Through these tests and others, the team confirmed in the simulated environment 
 
 <!-- Robô esteve avariado e estivemos à procura de novos algoritmos, alguns deles bastante interessantes e com possivel potencial, para além disso tentámos correr os dois algoritmos que já tinhamos testado em simulação no JACKAL um outro robô do ISR - acabámos por abandonar esta hipótese uma vez que não foi possivel correr este neste tipo de robô. -->
 
-The robot that we usually do the tests was broken, and the team were waiting for new pieces to arrive. So we couldn't do the tests with HDL algorithm and mcl3D algorithm. 
+<!-- The robot that we usually do the tests was broken, and the team were waiting for new pieces to arrive. So we couldn't do the tests with HDL algorithm and mcl3D algorithm. 
 
 So we decided that it would be good to search for new algorithms, and test them in simulation, similar as we did for the other two algorithms in order to test them and compare them, some of them were really interesting but it didn't apply to our robot or our sensors.
 
-Altough the usual robot was broken we tried to try the HDL algorithm and mcl3D algorithm in another robot of ISR, the JACKAL robot. We decided to abandon this idea, due to some problems in configuration of the robot, and its sensors, that were different from the robot that we are using.
+Altough the usual robot was broken we tried to try the HDL algorithm and mcl3D algorithm in another robot of ISR, the JACKAL robot. We decided to abandon this idea, due to some problems in configuration of the robot, and its sensors, that were different from the robot that we are using. -->
+During this week, the TIAGo robot's wrist was not working, which prevented any tests from being conducted. 
+
+To avoid unexpected problems, such as both algorithms failing on the real robot when testing became possible, additional research was carried out to find and simulate new algorithms. Although some algorithms looked promising, they were not compatible with the robot or its sensors.
+
+In parallel, an attempt was made to test the HDL and MCL3D algorithms on Jackal robot. However, this idea was abandoned due to configuration problems and sensor differences between JACKAL and the robot used.
 
 </div>

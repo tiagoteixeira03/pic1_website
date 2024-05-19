@@ -3,7 +3,7 @@ title: "Week 4 (4th Period)"
 meta_title: ""
 description: "meta description for week 1 blog post"
 date: 2024-05-12T13:28:00Z
-image: "/images/Blog/4th_week4/Algoritmo_HDL_testes_robo.png"
+image: "/images/Blog/4th_week4/cover.png"
 categories: ["4th Period - Weekly Progress"]
 authors: 
     - "João Carranca"
@@ -35,28 +35,24 @@ While these challenges are not directly attributable to the code's quality or re
 In week 7 of the 3rd period, the tests carried out on the TIAGo robot did not proceed as expected. 
 The possible causes were varied and could be related to the performance of the algorithms in a real environment or to the map itself. 
 However, with the new approach adopted for mapping, FAST-LIO, the maps undoubtedly acquired much more detail and points, which proved to be a great advantage for localization. Thus, during this week, the final tests for this task were finally completed.
-
 </div>
+
+##### → HDL Localization
 
 <div style="text-align: justify;">
 
-Finnaly this week the robot was fixed and we could finally try HDL algorithm and MCL3D algorithm, therefor obtaining results in a real environment.
-
-</div>
-
-#### HDL Algorithm
-
-<div style="text-align: justify;">
-We could run the HDL algorithm without any trouble, showing an outstanding performance as we can see in the figure below, the accuracy of the localization is evident. 
+<!-- We could run the HDL algorithm without any trouble, showing an outstanding performance as we can see in the figure below, the accuracy of the localization is evident.  -->
+The HDL algorithm was executed without any issues, demonstrating outstanding performance. As shown in the figure below, the accuracy of the localization is evident.
 
 To verify it, as explained in the results obtained in the simulation, it can be noted that the pointcloud captured by the sensor in real-time overlaps with the map, denoting the correct pose of the robot. Initially, it is necessary to manually indicate the pose estimate in rviz; however, this is a common problem in robotics and does not represent a significant drawback. Once the pose has been estimated, the robot localizes itself and remains localized throughout its journey.
-
 </div>
 
 {{< image 
-  src="/images/Blog/4th_week4/Algoritmo_HDL_testes_robo_gif.gif" 
-  caption="Figure 1 - HDL Algorithm tested in a real robot" 
+  src="/images/Blog/4th_week4/hdl.gif" 
+  caption="Figure 1 - HDL Localization algorithm tested in TIAGo robot" 
   alt="alter-text" 
+  height="300px" 
+  width="800px" 
   position="center" 
   command="fill" 
   option="q100" 
@@ -65,19 +61,22 @@ To verify it, as explained in the results obtained in the simulation, it can be 
   webp="false" 
 >}}
 
-#### MCL3D Algorithm
+##### → MCL3D
 
 <div style="text-align: justify;">
-When we were testing this algorithm, we were with really low expectations due to the fact that in simulation it didn't wen that well. Eventhough we knew that we wanted to try it anyway and obtain the best results possible with it. 
 
-Unfortunately our expectations would became a reality. Just a few seconds after the initial setup in rviz, the algorithm started to estimate its location in a poor manner, also the map and the data from the pointcloud were not alligned at all, and when the robot rotates, there is significant delocalization, as you can see in the image below:
+<!-- When we were testing this algorithm, we were with really low expectations due to the fact that in simulation it didn't wen that well. Eventhough we knew that we wanted to try it anyway and obtain the best results possible with it. 
 
+Unfortunately our expectations would became a reality. Just a few seconds after the initial setup in rviz, the algorithm started to estimate its location in a poor manner, also the map and the data from the pointcloud were not alligned at all, and when the robot rotates, there is significant delocalization, as you can see in the image below: -->
+In simulation, this algorithm didn't perform well, and it maintained this behaviour with the real robot. As shown in the video below, the robot delocalizes itself very easily, especially during rotations. This can be seen due to the mismatch between the map and the point cloud data.
 </div>
 
 {{< image 
-  src="/images/Blog/4th_week4/Algoritmo_MCL3D_testes_robo.png" 
-  caption="Figure 2 - MCL3D Algorithm tested in real robot" 
+  src="/images/Blog/4th_week4/mcl3d.gif" 
+  caption="Figure 2 - MCL3D algorithm tested in TIAGo robot" 
   alt="alter-text" 
+  height="300px" 
+  width="800px" 
   position="center" 
   command="fill" 
   option="q100" 
@@ -86,23 +85,25 @@ Unfortunately our expectations would became a reality. Just a few seconds after 
   webp="false" 
 >}}
 
-<div style="text-align: justify;">
+<!-- <div style="text-align: justify;">
 
 As we can see the localization is completely wrong and doesn't match in any way the real testbed in ISR.
 
-</div>
+</div> -->
 
 <div style="text-align: justify;">
 
-Another important aspect to take into account is that the *Ground truth* that we considered, was done with optitrack cameras that were scattered around the testbed. This cameras do a triangulation, giving us a better estimate of the position.
+<!-- Another important aspect to take into account is that the *Ground truth* that we considered, was done with optitrack cameras that were scattered around the testbed. This cameras do a triangulation, giving us a better estimate of the position. -->
 
-It is important to note that within the `.launch` files of the algorithms, various parameters are adjustable:
+The next steps in this task involve computing the errors associated with the Optitrack cameras, as mentioned in the proposal documentation and project presentation. Therefore, later this week, the cameras were calibrated and rosbags were generated — i.e., data was recorded as the robot moved with the different combinations of parameters for both algorithms (as can be seen in the code block below).
 
-</div>
+This approach is used since the ground truth of the OptiTrack cameras is the one that will be considered. These cameras, which are strategically positioned around the testbed, use a triangulation system to provide a more accurate estimate of the robot's pose.
+
+Within the `.launch` files of the algorithms, various parameters are adjustable:
 
 ```cpp 
-//HDL Localization - FALTA VER ESTE
-<arg name="use_odom" default="false" /> // The use of Odometry is optional, it's value can be "true" or "false"
+//HDL Localization
+<arg name="enable_robot_odometry_prediction" value="false" /> // The use of Odometry is optional, it's value can be "true" or "false"
 <arg name="use_imu" default="false" /> // The use of IMU is optional, it's value can be "true" or "false"
 
 //MCL3D
@@ -111,13 +112,14 @@ It is important to note that within the `.launch` files of the algorithms, vario
 ```
 Multiple combinations were tested to calculate the errors and determine the optimal configurations.
 
-Throughout this week, the cameras were calibrated and rosbags were generated. We recorded various datasets as the robot moved with the different combinations of parameters for both algorithms. 
-
 However, the robot's data acquisition rate is higher than the optitrack cameras, which means that it will be necessary to synchronize the data, in order to find the moments when both sources were capturing information, to calculate the errors accurately and generate the necessary plots.
-
 </div>
 
-<div style="text-align: justify;">
+<!-- Throughout this week, the cameras were calibrated and rosbags were generated. We recorded various datasets as the robot moved with the different combinations of parameters for both algorithms. 
+
+However, the robot's data acquisition rate is higher than the optitrack cameras, which means that it will be necessary to synchronize the data, in order to find the moments when both sources were capturing information, to calculate the errors accurately and generate the necessary plots. -->
+
+<!-- <div style="text-align: justify;">
 
 ##### Next Steps
 
@@ -125,7 +127,7 @@ The next steps in this task involve computing the errors associated with the Opt
 Also in the next week we hope to develop two scripts in python in order to analyze closely the estimation of the localization for both algorithms.
 The first script is to match the points from the cameras with the points from the scan and the second to make the estimation of the error.
 
-</div>
+</div> -->
 
 
 
