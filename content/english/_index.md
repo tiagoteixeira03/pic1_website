@@ -7,11 +7,11 @@ banner:
   button1:
     enable: true
     label: "Project Proposal"
-    link: "https://www.canva.com/design/DAF0t_JUzpc/f3WcNTHnj8x-dZn2-DHEHw/view?utm_content=DAF0t_JUzpc&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel"
+    link: "https://drive.google.com/file/d/1WkKM1ybGOpzfD7NGyNFDLN0ziMhezp-V/view?usp=sharing"
   button2:
     enable: true
     label: "Mid Pitch"
-    link: "https://www.canva.com/design/DAGAueGpeZM/JpdjW6i70tnA4kLCANwFoA/view?utm_content=DAGAueGpeZM&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+    link: "https://drive.google.com/file/d/1qOLOZZY6H6EaE4zt_lZKSZ2Fyx7CbiQ-/view?usp=sharing"
   button3:
     enable: true
     label: "Final Pitch"
