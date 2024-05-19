@@ -9,7 +9,7 @@ authors:
     - "António Morais"
     - "Tiago Teixeira"
     - "João Pinheiro"
-tags: ["mapping", "general", "localization"]
+tags: ["mapping", "general"]
 draft: false
 ---
 

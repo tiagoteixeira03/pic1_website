@@ -32,9 +32,9 @@ While these challenges are not directly attributable to the code's quality or re
 
 <div style="text-align: justify;">
 
-In week 7 of the 3rd period, the tests carried out on the TIAGo robot did not proceed as expected. 
+In Week 7 (3<sup>rd</sup> Period), the tests carried out on the TIAGo robot did not proceed as expected. 
 The possible causes were varied and could be related to the performance of the algorithms in a real environment or to the map itself. 
-However, with the new approach adopted for mapping, FAST-LIO, the maps undoubtedly acquired much more detail and points, which proved to be a great advantage for localization. Thus, during this week, the final tests for this task were finally completed.
+However, with the new approach adopted for mapping, [FAST-LIO](https://github.com/hku-mars/FAST_LIO), the maps undoubtedly acquired much more detail and points, which proved to be a great advantage for localization. Thus, during this week, the final tests for this task were finally completed.
 </div>
 
 ##### → HDL Localization
@@ -42,7 +42,7 @@ However, with the new approach adopted for mapping, FAST-LIO, the maps undoubted
 <div style="text-align: justify;">
 
 <!-- We could run the HDL algorithm without any trouble, showing an outstanding performance as we can see in the figure below, the accuracy of the localization is evident.  -->
-The HDL algorithm was executed without any issues, demonstrating outstanding performance. As shown in the figure below, the accuracy of the localization is evident.
+The [HDL](https://github.com/koide3/hdl_localization) algorithm was executed without any issues, demonstrating outstanding performance. As shown in the figure below, the accuracy of the localization is evident.
 
 To verify it, as explained in the results obtained in the simulation, it can be noted that the pointcloud captured by the sensor in real-time overlaps with the map, denoting the correct pose of the robot. Initially, it is necessary to manually indicate the pose estimate in rviz; however, this is a common problem in robotics and does not represent a significant drawback. Once the pose has been estimated, the robot localizes itself and remains localized throughout its journey.
 </div>
@@ -112,7 +112,7 @@ Within the `.launch` files of the algorithms, various parameters are adjustable:
 ```
 Multiple combinations were tested to calculate the errors and determine the optimal configurations.
 
-However, the robot's data acquisition rate is higher than the optitrack cameras, which means that it will be necessary to synchronize the data, in order to find the moments when both sources were capturing information, to calculate the errors accurately and generate the necessary plots.
+However, the robot's data acquisition rate is higher than the [OptiTrack PRIME13](https://optitrack.com/cameras/prime-13/) cameras, which means that it will be necessary to synchronize the data, in order to find the moments when both sources were capturing information, to calculate the errors accurately and generate the necessary plots.
 </div>
 
 <!-- Throughout this week, the cameras were calibrated and rosbags were generated. We recorded various datasets as the robot moved with the different combinations of parameters for both algorithms. 

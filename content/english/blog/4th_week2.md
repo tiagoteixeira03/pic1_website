@@ -151,6 +151,6 @@ During this week, the TIAGo robot's wrist was not working, which prevented any t
 
 To avoid unexpected problems, such as both algorithms failing on the real robot when testing became possible, additional research was carried out to find and simulate new algorithms. Although some algorithms looked promising, they were not compatible with the robot or its sensors.
 
-In parallel, an attempt was made to test the HDL and MCL3D algorithms on Jackal robot. However, this idea was abandoned due to configuration problems and sensor differences between JACKAL and the robot used.
+In parallel, an attempt was made to test the [HDL](https://github.com/koide3/hdl_localization) and [MCL3D](https://github.com/NaokiAkai/mcl3d_ros) algorithms on [Jackal](https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/) robot. However, this idea was abandoned due to configuration problems and sensor differences between [Jackal](https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/) and the robot used.
 
 </div>

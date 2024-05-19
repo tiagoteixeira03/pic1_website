@@ -14,7 +14,9 @@ draft: false
 
 #### 2D Path Planning/Guidance
 
-During week #7 of the third period, we completed the first of our two main tasks for 2D Path Planning/Guidance. This involved modifying an existing node to dynamically adjust to changes in the robot's height when converting the 3D point cloud acquired by the Ouster sensor into obstacles on a 2D map.
+<div style="text-align: justify;">
+
+<!-- During Week 7 (3<sup>rd</sup> Period), we completed the first of our two main tasks for 2D Path Planning/Guidance. This involved modifying an existing node to dynamically adjust to changes in the robot's height when converting the 3D point cloud acquired by the Ouster sensor into obstacles on a 2D map.
 
 Moving forward into this week, we transitioned to our next task, which involves calculating an accurate footprint for the robot that updates in real time in response to changes in the robot's arm position. Previously, the robot's footprint was a simple circle, which was adequate enough when the arm was retracted but became inaccurate as its position changed.
 
@@ -26,7 +28,25 @@ To address this, we developed a new ROS package containing a single Python node 
 4. Utilizing the alphashape module to calculate the coordinates for the polygon formed around this set of points.
 5. Updating the footprint parameters in the global and local costmaps using the calculated polygon.
 
-In Figure 1 we can see that the robot's footprint (green line on the ground) updates in real time when we move the robot's arm around.
+In Figure 1 we can see that the robot's footprint (green line on the ground) updates in real time when we move the robot's arm around. -->
+During Week 7 (3<sup>rd</sup> Period), the first of two main tasks for 2D Path Planning/Guidance was completed. This involved modifying an existing node to dynamically adjust to changes in the robot's height when converting the 3D point cloud acquired by the [OS1](https://ouster.com/products/hardware/os1-lidar-sensor) sensor into obstacles on a 2D map.
+
+Moving forward into the current week, the focus shifted to the next task: calculating an accurate footprint for the robot that updates in real time in response to changes in the robot's arm position. Previously, the robot's footprint was a simple circle, which was adequate when the arm was retracted but became inaccurate as its position changed.
+
+To address this, a new ROS package containing a single Python node was developed, responsible for calculating and updating the footprint on both the global and local costmaps at a specified frequency. The following steps outline the implementation process:
+
+1. Adding virtual point coordinates forming a circle to a set of points.
+
+2. Calculating the projection on the <span style="font-family: 'Times New Roman', Times, serif;">xz</span> plane of the transform of all robot frames to the base frame and adding these coordinates to the previous set of points.
+
+3. Adding four virtual points around each point from the robot's arm to simulate thickness.
+
+4. Utilizing the alphashape module to calculate the coordinates for the polygon formed around this set of points.
+
+5. Updating the footprint parameters in the global and local costmaps using the calculated polygon.
+
+In Figure 1, the robot's footprint (green line on the ground) can be seen updating in real time as the robot's arm is moved.
+</div>
 
 <div class="image-container">
     {{< image 

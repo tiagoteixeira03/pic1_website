@@ -3,7 +3,7 @@ title: "Week 1 (3rd Period)"
 meta_title: ""
 description: "meta description for week 1 blog post"
 date: 2024-02-18T13:28:00Z
-image: "/images/Blog/3rd_week1/ElectroCap-Challenge.png"
+image: "/images/Blog/3rd_week1/cover.png"
 categories: ["3rd Period - Weekly Progress"]
 authors:
   - "António Morais"
