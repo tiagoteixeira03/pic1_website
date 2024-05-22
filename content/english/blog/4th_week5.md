@@ -14,12 +14,15 @@ draft: false
 
 <div style="text-align: justify;">
 
-Under construction. Check back later.
-</div>
+This week, final tests commenced. The tests proposed by the team and scheduled for execution include Navigation in the testbed:
 
-#### Demo-Day Presentation Materials
+- To a random waypoint without dynamic obstacles.
 
-<div style="text-align: justify;">
+- To a random waypoint with a dynamic obstacle (e.g., a person walking).
 
-Under construction. Check back later.
+- To a random waypoint with a small obstacle that 2D navigation does not avoid (e.g., sponge).
+
+- From the kitchen to the living room, ensuring the robot avoids complex 2D navigation furniture (e.g., tables with center legs, chairs without back legs).
+
+The students will repeat each experiment five to ten times, recording collisions and successes, and performing a statistical analysis for both the current method and the one developed by the PIC1 team. The tests are scheduled to conclude next week; however, the team is encountering issues with the TIAGo robot, as the torso motor is malfunctioning, which affects the robot's ability to navigate.
 </div>
