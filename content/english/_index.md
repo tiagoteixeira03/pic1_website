@@ -7,11 +7,11 @@ banner:
   button1:
     enable: true
     label: "Project Proposal"
-    link: "https://drive.google.com/file/d/1WkKM1ybGOpzfD7NGyNFDLN0ziMhezp-V/view?usp=sharing"
+    link: "https://drive.google.com/uc?export=download&id=1KlvVszPfeou4RQMEsc0svV8N6MLE5lv0"
   button2:
     enable: true
     label: "Mid Pitch"
-    link: "https://drive.google.com/file/d/1qOLOZZY6H6EaE4zt_lZKSZ2Fyx7CbiQ-/view?usp=sharing"
+    link: "https://drive.google.com/uc?export=download&id=1zE3jWg3Sm2TsN3edCNeCnta-G8qGnxKi"
   button3:
     enable: true
     label: "Final Pitch"
