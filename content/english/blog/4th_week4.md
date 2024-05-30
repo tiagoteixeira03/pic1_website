@@ -49,7 +49,7 @@ To verify it, as explained in the results obtained in the simulation, it can be 
 
 {{< image 
   src="/images/Blog/4th_week4/hdl.gif" 
-  caption="Figure 1 - HDL Localization algorithm tested in TIAGo robot" 
+  caption="Figure 1 - HDL Localization algorithm tested in TIAGo robot." 
   alt="alter-text" 
   height="300px" 
   width="800px" 
@@ -73,7 +73,7 @@ In simulation, this algorithm didn't perform well, and it maintained this behavi
 
 {{< image 
   src="/images/Blog/4th_week4/mcl3d.gif" 
-  caption="Figure 2 - MCL3D algorithm tested in TIAGo robot" 
+  caption="Figure 2 - MCL3D algorithm tested in TIAGo robot." 
   alt="alter-text" 
   height="300px" 
   width="800px" 
