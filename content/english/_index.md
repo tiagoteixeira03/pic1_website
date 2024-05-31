@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Indoor 3D-Sensor Based Navigation"
-  content: "Welcome to our project! We are a team of six students at Instituto Superior Técnico (IST) within the ElectroCap Program, an initiative from the Department of Electrical and Computer Engineering (DEEC) under the 1st Cycle Integrated Project (PIC1). Along with SocRob@Home at the Institute For Robotics and Systems (ISR) we are working on a TIAGo robot, developing an indoor 3D-sensor based navigation."
+  content: "Welcome to our project! We are a team of six students at Instituto Superior Técnico (IST) within the ElectroCap Program, an initiative from the Department of Electrical and Computer Engineering (DEEC) under the 1st Cycle Integrated Project (PIC1). Along with SocRob@Home at the Institute for Systems and Robotics (ISR) we are working on a TIAGo robot, developing an indoor 3D-sensor based navigation."
   image: "/images/tiago_robot.gif"
   button1:
     enable: true
