@@ -162,4 +162,10 @@ Solution requirements for a velocity of 0.3m/s:
 According to the various tests performed in an environment with two static obstacles and a dynamic obstacle (visible in Figure 3), it can be observed that for a distance of approximately 1 meter (from the robot to the chair on the right), the cost map (the cyan-purple stains on the map) is updated almost instantly, as is the path calculated by the robot considering new obstacles. Although the team was not able to obtain a specific value for this requirement, it can be approximately stated that the team's solution meets the requirement.
 
 Regarding the ~15 centimeter requirement the team's expectation was for a collision, but as demonstrated in Figure 3 this does not occur. Thus, it can be inferred that this requirement was also met.
+
+##### → Next week
+
+Next week, the team intends to increase the number of trials performed for each test and use test environments that are more congruent with each other to ensure the increase in difficulty of each test. 
+
+The team will also need to prepare the final documents to be submitted for evaluation (Poster, Video and Final Pitch).
 </div>

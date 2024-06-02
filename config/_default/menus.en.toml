@@ -28,9 +28,19 @@ url = "newsletter/"
 weight = 1
 
 # [[footer]]
-# name = "Privacy Policy"
-# url = "privacy-policy/"
+# name = "Contact us"
+# url = "contact/"
 # weight = 2
+
+# [[footer]]
+# name = "Contact us"
+# url = "contact/"
+# weight = 2
+
+[[footer]]
+name = "Documents"
+url = "documents/"
+weight = 2
 
 # [[footer]]
 # name = "About"
