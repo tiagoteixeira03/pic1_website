@@ -26,11 +26,11 @@ The tests will be denoted as:
 
 - **Static obstacles:** Navigation with a known map and two static obstacles.
 
-- **Static obstacles + Object that 2D-Sensor based Navigation doesn't avoid:** Navigation with a known map, static obstacles, and a suspended object (a board) that the 3D-Sensor-based navigation avoids, but the 2D-Sensor-based navigation would collide with.
+- **Static obstacles + Static obstacle that 2D-Sensor based Navigation doesn't avoid:** Navigation with a known map, static obstacles, and a suspended object (a board) that the 3D-Sensor-based navigation avoids, but the 2D-Sensor-based navigation would collide with.
 
-- **Static obstacles + Object that 2D-Sensor based Navigation doesn't avoid + Dynamic obstacle:** Navigation with a known map, static obstacles, a suspended object (a board), and a dynamic obstacle (a person) that the robot needs to detect and calculate another possible trajectory to its destination.
+- **Static obstacles + Static obstacle that 2D-Sensor based Navigation doesn't avoid + Dynamic obstacle:** Navigation with a known map, static obstacles, a suspended object (a board), and a dynamic obstacle (a person) that the robot needs to detect and calculate another possible trajectory to its destination.
 
-- **Little sized objects:** Navigation with a known map and static obstacles of decreasing sizes that the 2D-Sensor-based navigation has difficulty detecting.
+- **Gradually smaller static obstacles:** Navigation with a known map and static obstacles of decreasing sizes that the 2D-Sensor-based navigation has difficulty detecting.
 
 The video demonstrations of each test are presented below.
 
@@ -66,7 +66,7 @@ The video demonstrations of each test are presented below.
 
 {{< image 
   src="/images/Blog/4th_week7/cadeira_com_tabua.gif" 
-  caption="Figure 3 - Test name: Static obstacles + Object that 2D-Sensor based Navigation doesn't avoid." 
+  caption="Figure 3 - Test name: Static obstacles + Static obstacle that 2D-Sensor based Navigation doesn't avoid." 
   alt="alter-text" 
   height="300px" 
   width="800px" 
@@ -80,7 +80,7 @@ The video demonstrations of each test are presented below.
 
 {{< image 
   src="/images/Blog/4th_week7/cadeiras_tabua_pessoa_para.gif" 
-  caption="Figure 4 - Test name: Static obstacles + Object that 2D-Sensor based Navigation doesn't avoid + Dynamic obstacle." 
+  caption="Figure 4 - Test name: Static obstacles + Static obstacle that 2D-Sensor based Navigation doesn't avoid + Dynamic obstacle." 
   alt="alter-text" 
   height="300px" 
   width="800px" 
@@ -94,7 +94,7 @@ The video demonstrations of each test are presented below.
 
 {{< image 
   src="/images/Blog/4th_week7/little_objects_3.gif" 
-  caption="Figure 5 - Test name: Little sized objects." 
+  caption="Figure 5 - Test name: Gradually smaller static obstacles." 
   alt="alter-text" 
   height="300px" 
   width="800px" 
