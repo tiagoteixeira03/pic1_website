@@ -20,7 +20,7 @@ draft: false
 
 ## Final Pitch 
 
-#### (online, .pdf, .pptx)
+#### ([online](https://www.canva.com/design/DAGGtxwC4S8/OxNd0c0ntCaJS8R1o3oyMQ/view?utm_content=DAGGtxwC4S8&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel), [.pdf](https://drive.google.com/uc?export=download&id=1rps51bwj-KQzXyxou2w86kIU9SGzoOm_), [.pptx](https://drive.google.com/uc?export=download&id=1op122lel-SBj3luwb7RI2G2J5BKqBa1o))
 
 ## List of Materials 
 
@@ -32,7 +32,8 @@ draft: false
 
 ## Demo-Day Poster 
 
-#### (.pdf)
+#### ([online](https://www.canva.com/design/DAGGstkXOjA/OFg1qkpOPirhoqxaArrG2w/view?utm_content=DAGGstkXOjA&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel), [.png](https://drive.google.com/uc?export=download&id=18-QI0eTnDB4YGI4UsjvaGtqe0gAQ7wBE), [.pdf](https://drive.google.com/uc?export=download&id=10gioeqCAVyentJ6P0ZfuCi3bhpWc6BXw))
+
 
 </div>
 

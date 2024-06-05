@@ -124,10 +124,3 @@ Finally, the results are compiled in the table below, similar to the one present
     title="image title"  
     webp="false" 
 >}}
-
-#### Demo-Day Presentation Materials
-
-<div style="text-align: justify;">
-
-Under construction. Please check back later.
-</div>
