@@ -5,8 +5,9 @@ description: "meta description for week 4 blog post"
 date: 2024-03-10T13:28:00Z
 image: "/images/Blog/3rd_week4/A-LOAM_DATASET.jpeg"
 categories: ["3rd Period - Weekly Progress"]
-author: "António Morais"
-tags: ["website", "mapping"]
+authors: 
+  - "António Morais"
+tags: ["Website", "Mapping"]
 draft: false
 ---
 

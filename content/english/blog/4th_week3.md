@@ -6,10 +6,10 @@ date: 2024-05-05T13:28:00Z
 image: "/images/Blog/4th_week3/cover.png"
 categories: ["4th Period - Weekly Progress"]
 authors: 
-    - "António Morais"
-    - "Tiago Teixeira"
-    - "João Pinheiro"
-tags: ["mapping", "general"]
+  - "António Morais"
+  - "Tiago Teixeira"
+  - "João Pinheiro"
+tags: ["Mapping", "General"]
 draft: false
 ---
 

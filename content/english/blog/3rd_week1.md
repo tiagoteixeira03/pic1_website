@@ -8,7 +8,7 @@ categories: ["3rd Period - Weekly Progress"]
 authors:
   - "António Morais"
   - "Catarina Caramalho"
-tags: ["general"]
+tags: ["General"]
 draft: false
 ---
 

@@ -8,7 +8,7 @@ categories: ["3rd Period - Weekly Progress"]
 authors:
   - "Catarina Caramalho"
   - "Tiago Teixeira"
-tags: ["localization", "path planning"]
+tags: ["Localization", "Path Planning"]
 draft: false
 ---
 #### 3D Localization

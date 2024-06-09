@@ -6,10 +6,10 @@ date: 2024-05-12T13:28:00Z
 image: "/images/Blog/4th_week4/cover.png"
 categories: ["4th Period - Weekly Progress"]
 authors: 
-    - "João Carranca"
-    - "Catarina Caramalho"
-    - "João Pinheiro"
-tags: ["path planning", "localization"]
+  - "João Carranca"
+  - "Catarina Caramalho"
+  - "João Pinheiro"
+tags: ["Path Planning", "Localization"]
 draft: false
 ---
 

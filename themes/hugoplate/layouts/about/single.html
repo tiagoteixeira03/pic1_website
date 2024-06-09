@@ -1,10 +1,9 @@
 {{ define "main" }}
   <section class="section-sm pb-0">
     <div class="container">
-      <div
-        class="row border-border dark:border-darkmode-border justify-center border-b pb-14">
+      <div class="row border-border dark:border-darkmode-border justify-center border-b pb-14">
         <div class="lg:col-4 text-center">
-          {{ $image:= .Params.image }}
+          {{ $image := .Params.image }}
           {{ if $image }}
             {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mx-auto" "Size" "200x200") }}
           {{ else if .Params.Email }}
@@ -36,13 +35,24 @@
       </div>
 
       <div class="row pb-16 pt-14">
-        {{ $filterByAuthor := where site.RegularPages "Params.author" "==" .Title }}
-        {{ range $filterByAuthor }}
+        <!-- Define $filterByAuthor to filter posts by the current author's name -->
+        {{ $filterByAuthor := where site.RegularPages "Params.authors" "intersect" (slice .Title) }}
+      
+        <!-- Debugging: Print the value of .Title -->
+        <!-- {{ printf "Title: %s" .Title }} -->
+      
+        <!-- Debugging: Print the length of $filterByAuthor -->
+        <!-- {{ printf "Number of posts filtered by author: %d" (len $filterByAuthor) }} -->
+      
+        <!-- Debugging: Print the value of each post filtered by author -->
+        {{ range $index, $post := $filterByAuthor }}
+          <!-- {{ printf "Post %d: %s" $index $post.Title }} -->
           <div class="md:col-6 lg:col-4 mb-12">
-            {{ partial "components/blog-card" . }}
+            {{ partial "components/blog-card" $post }}
           </div>
         {{ end }}
       </div>
+      
     </div>
   </section>
 {{ end }}

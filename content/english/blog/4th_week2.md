@@ -9,7 +9,7 @@ authors:
   - "António Morais"
   - "João Carranca"
   - "João Pinheiro"
-tags: ["mapping", "path planning", "localization"]
+tags: ["Mapping", "Path Planning", "Localization"]
 draft: false
 ---
 

@@ -9,7 +9,7 @@ authors:
   - "António Morais"
   - "Catarina Caramalho"
   - "Tiago Teixeira"
-tags: ["localization", "mapping", "path planning"]
+tags: ["Localization", "Mapping", "Path Planning"]
 draft: false
 ---
 #### 3D Mapping

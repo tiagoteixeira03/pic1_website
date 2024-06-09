@@ -14,26 +14,16 @@
           </h1>
           <ul class="mb-4">
             {{ range .Params.authors }}
-            <li class="mr-4 inline-block">
-              <a
-                href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
-                <i class="fa-regular fa-circle-user mr-2"></i
-                >{{ . }}
-              </a>
-            </li>
+              <li class="mr-4 inline-block">
+                <i class="fa-regular fa-circle-user mr-2"></i>{{ . }}
+              </li>
             {{ end }}
             {{ $categories:= .Params.categories }}
             {{ if $categories }}
               <li class="mr-4 inline-block">
                 <i class="fa-regular fa-folder mr-2"></i>
-                {{ range $i,$p:= $categories }}
-                  <a
-                    href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-                    class=""
-                    >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-                      {{ "," }}
-                    {{ end }}
-                  </a>
+                {{ range $i, $p := $categories }}
+                  <span>{{ . }}</span>{{ if ne $i (sub (len $categories) 1) }},{{ end }}
                 {{ end }}
               </li>
             {{ end }}
@@ -51,7 +41,7 @@
               <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
                 <h5 class="mr-3">{{ i18n "tags" }} :</h5>
                 <ul>
-                  {{ range $i,$p:= $tags }}
+                  {{ range $i, $p := $tags }}
                     <li class="inline-block">
                       <a
                         class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"

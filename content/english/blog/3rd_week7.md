@@ -10,7 +10,7 @@ authors:
   - "Catarina Caramalho"
   - "João Pinheiro"
   - "Tiago Teixeira"
-tags: ["mapping", "localization", "path planning"]
+tags: ["Mapping", "Localization", "Path Planning"]
 draft: false
 ---
 

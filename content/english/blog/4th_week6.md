@@ -6,9 +6,9 @@ date: 2024-05-26T12:00:00Z
 image: "/images/Blog/4th_week6/cover.png"
 categories: ["4th Period - Weekly Progress"]
 authors: 
-    - "António Morais"
-    - "João Carranca"
-tags: ["general"]
+  - "António Morais"
+  - "João Carranca"
+tags: ["General"]
 draft: false
 ---
 

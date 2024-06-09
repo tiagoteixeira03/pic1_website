@@ -5,8 +5,9 @@ description: "meta description for week 3 blog post"
 date: 2024-03-03T13:28:00Z
 image: "/images/Blog/3rd_week3/cover.png"
 categories: ["3rd Period - Weekly Progress"]
-author: "António Morais"
-tags: ["mapping"]
+authors: 
+  - "António Morais"
+tags: ["Mapping"]
 draft: false
 ---
 

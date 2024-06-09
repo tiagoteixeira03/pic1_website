@@ -5,8 +5,9 @@ description: "meta description for week 2 blog post"
 date: 2024-02-25T13:28:00Z
 image: "/images/Blog/3rd_week2/LIO-SAM_DATASET.jpg"
 categories: ["3rd Period - Weekly Progress"]
-author: "António Morais"
-tags: ["mapping"]
+authors: 
+  - "António Morais"
+tags: ["Mapping"]
 draft: false
 ---
 

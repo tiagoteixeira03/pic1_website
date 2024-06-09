@@ -5,8 +5,9 @@ description: "meta description for week 1 blog post"
 date: 2024-06-02T12:00:00Z
 image: "/images/Blog/4th_week7/cover.png"
 categories: ["4th Period - Weekly Progress"]
-author: "António Morais"
-tags: ["general"]
+authors: 
+  - "António Morais"
+tags: ["General"]
 draft: false
 ---
 

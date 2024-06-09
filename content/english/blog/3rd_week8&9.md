@@ -4,9 +4,10 @@ meta_title: ""
 description: "meta description for week 8&9 blog post"
 date: 2024-04-14T13:28:00Z
 image: "/images/Blog/3rd_week8&9/cover.jpg"
-categories: ["Term breaks"]
-author: "António Morais"
-tags: ["website", "general"]
+categories: ["Term Breaks"]
+authors: 
+  - "António Morais"
+tags: ["Website", "General"]
 draft: false
 ---
 

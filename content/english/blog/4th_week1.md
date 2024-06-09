@@ -8,7 +8,7 @@ categories: ["4th Period - Weekly Progress"]
 authors:
    - "António Morais"
    - "Tiago Teixeira"
-tags: ["path planning", "mapping"]
+tags: ["Path Planning", "Mapping"]
 draft: false
 ---
 
