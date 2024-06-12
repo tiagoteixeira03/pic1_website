@@ -39,7 +39,23 @@
 </section>
 {{ end }}
 
-<!-- /Banner -->
+<section class="section-sm bg-gradient">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="md:col-10 lg:col-7 text-center">
+                <h2 class="mb-4">Project Video</h2>
+            </div>
+        </div>
+        <div class="row justify-center">
+            <div class="md:col-10 lg:col-8 text-center">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/azAaS_id_40?autoplay=1&loop=1&playlist=azAaS_id_40&mute=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--Features -->
 {{ range $i, $e := .Params.features }}
 <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">

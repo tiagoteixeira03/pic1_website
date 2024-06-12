@@ -1,10 +1,7 @@
 ---
 title: "Documents"
-# meta title
 meta_title: ""
-# meta description
 description: "This is meta description"
-# save as draft
 draft: false
 ---
 
@@ -28,12 +25,11 @@ draft: false
 
 ## Demo-Day Video 
 
-#### (.mp4)
+#### ([online](https://drive.google.com/file/d/1hC9j4-Btg3Ng-m-ReHbgLRALT_sZOD7W/view?usp=sharing), [.mp4](https://drive.google.com/uc?export=download&id=1hC9j4-Btg3Ng-m-ReHbgLRALT_sZOD7W))
 
 ## Demo-Day Poster 
 
 #### ([online](https://www.canva.com/design/DAGGstkXOjA/OFg1qkpOPirhoqxaArrG2w/view?utm_content=DAGGstkXOjA&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel), [.png](https://drive.google.com/uc?export=download&id=18-QI0eTnDB4YGI4UsjvaGtqe0gAQ7wBE), [.pdf](https://drive.google.com/uc?export=download&id=10gioeqCAVyentJ6P0ZfuCi3bhpWc6BXw))
-
 
 </div>
 

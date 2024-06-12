@@ -43,4 +43,3 @@ features:
       label: "List of Materials"
       link: "https://drive.google.com/file/d/1SouI8sfaZyrtQFAuF7zKRp8EEdvZR_NO/view?usp=sharing"
 ---
-<!-- We're a dynamic team within the ElectroCap Program, an initiative from the Department of Electrical and Computer Engineering (DEEC) under the 1st Cycle Integrated Project (PIC1). Focused on improving 2D navigation for autonomous domestic mobile robots, our project involves installing a 3D LiDAR system.  -->
